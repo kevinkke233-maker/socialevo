@@ -1,0 +1,19 @@
+# Local configuration and newly generated game data
+.env
+.env.local
+.env.*.local
+api_keys.local.json
+api_keys.local.*
+.local-data/
+__pycache__/
+*.py[cod]
+*.sqlite*
+*.db
+*.db-*
+*.pem
+*.key
+*.log
+node_modules/
+playtest_exports/
+test-results/
+.DS_Store

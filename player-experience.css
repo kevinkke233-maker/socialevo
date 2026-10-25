@@ -1,0 +1,449 @@
+/* Approved paper/teal player presentation. Existing art and admin tools retained. */
+#game-screen.player-experience{--ui-ink:#253a3d;--ui-paper:#fcfbf5;--ui-teal:#326d68;--ui-sub:#617277;font-family:"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif}
+#game-screen.player-experience .game-layout{margin-top:0}
+#game-screen.player-experience [hidden]{display:none!important}
+#game-screen.player-experience.participant-mode .pixel-world{height:calc(100vh - 64px);min-height:780px;border-radius:14px;border:0;box-shadow:0 18px 48px #233d331c}
+#game-screen.player-experience .pixel-world>.game-header{position:absolute;z-index:35;inset:0 0 auto;height:94px;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;background:rgba(252,251,245,.94);border:0;color:var(--ui-ink);gap:15px}
+#game-screen.player-experience .ui-brand{display:grid;grid-template-columns:42px auto;column-gap:13px;align-items:center}
+.ui-brand-mark{grid-column:1;grid-row:1/3;display:grid;place-items:center;width:42px;height:43px;border-radius:9px;background:#253a3d;color:#fcfbf5;font:32px Georgia,serif}
+#game-screen.player-experience .ui-brand h2{grid-column:2;grid-row:1;font:400 23px Georgia,"Noto Serif CJK SC",serif;letter-spacing:1px;margin:0}
+#game-screen.player-experience .ui-brand .eyebrow{grid-column:2;grid-row:2;font-size:12px;color:var(--ui-sub);margin:0;letter-spacing:.5px}
+.ui-game-nav{display:flex;gap:8px}.ui-game-nav button,.ui-speech-actions button{background:transparent;border:0;color:var(--ui-ink);display:flex;align-items:center;gap:8px;min-height:44px;padding:7px 11px;font-size:14px}
+#game-screen.player-experience kbd{display:inline-flex;align-items:center;justify-content:center;min-width:23px;height:24px;padding:0 5px;border:1px solid #9daa98;border-radius:5px;font:11px inherit;white-space:nowrap}
+#ui-objective{position:absolute;z-index:9;left:28px;top:112px;width:min(352px,32%);padding:18px 21px;background:rgba(252,251,245,.96);border-radius:11px;color:var(--ui-ink);box-shadow:0 8px 24px #263b2417}
+.ui-objective-heading{display:flex;justify-content:space-between;gap:14px;color:var(--ui-sub);font-size:12px}
+#ui-objective-title{font:500 22px "Noto Serif CJK SC",Georgia,serif;margin:8px 0}
+#ui-objective .goal-strip{display:block;max-width:none;background:none;border:0;padding:0;box-shadow:none}
+#ui-objective #current-objective{font-size:13px;line-height:1.9;color:var(--ui-sub);display:block}
+#game-screen.player-experience .room-window{top:11%}
+#game-screen.player-experience .room-task-board{top:29%;height:13%;width:14%}
+#game-screen.player-experience .sprite-name{padding:4px 9px;background:#fffef7;border:1px solid #b4ae98;border-radius:4px;font-size:13px;font-weight:500;top:-28px}
+#game-screen.player-experience .pixel-sprite{transition:left 150ms linear,top 150ms linear;cursor:pointer}
+#game-screen.player-experience.admin-mode-active .pixel-world{height:780px;min-height:780px}
+#game-screen.player-experience .ui-brand{min-width:0}
+#game-screen.player-experience .pixel-sprite.player{cursor:default}
+#game-screen.player-experience .pixel-sprite.npc:hover .sprite-name{border-color:var(--ui-teal);background:#eaf2e4}
+#game-screen.player-experience .proximity-hint{z-index:10;bottom:128px;border:0;border-radius:8px;background:#2d514c;color:#fffcee;box-shadow:0 5px 16px #223b3422;font-size:14px}
+#game-screen.player-experience .world-help{left:28px;right:auto;top:auto;bottom:99px;max-width:68%;background:rgba(252,251,245,.94);color:var(--ui-sub);border:0;border-radius:7px;font-size:12px;font-weight:400;line-height:1.7}
+#game-screen.player-experience .world-help:before{display:none}
+.ui-control-strip{position:absolute;z-index:12;left:28px;bottom:28px;display:flex;flex-wrap:wrap;gap:20px;padding:11px 16px;border-radius:9px;background:rgba(252,251,245,.95);color:#3e5853;box-shadow:0 6px 18px #20392d12;font-size:13px;align-items:center}
+.ui-control-strip>span{display:flex;align-items:center;gap:7px}.ui-control-strip button{background:transparent;border:0;min-height:30px;padding:0;color:inherit;display:flex;gap:7px;align-items:center}
+#game-screen.player-experience .expression-dock{left:auto;bottom:24px;right:24px;max-width:calc(100% - 48px)}
+#game-screen.player-experience .laptop-dock-card{background:rgba(252,251,245,.95);border:1px solid #d4dccb;border-radius:9px;box-shadow:none;color:#326d68}
+#game-screen.player-experience .galgame-portrait{bottom:0;left:2%;max-width:35%;width:auto;height:86%;opacity:.93;filter:drop-shadow(0 12px 22px #222e2426);transform:none}
+#game-screen.player-experience .galgame-npc-portrait{left:auto;right:2%}
+#game-screen.player-experience .galgame-dialogue-layer.galgame-speaker-player .galgame-player-portrait,#game-screen.player-experience .galgame-dialogue-layer.galgame-speaker-npc .galgame-npc-portrait{opacity:1;transform:none;filter:drop-shadow(0 12px 22px #222e2426)}
+#game-screen.player-experience .galgame-readability-scrim{height:45%;background:linear-gradient(transparent,rgba(24,45,42,.35) 55%,rgba(24,45,42,.7))}
+#game-screen.player-experience .galgame-dialogue-copy{left:22%;right:22%;bottom:42px;min-height:0;padding:23px 27px 15px;border-radius:12px;background:rgba(252,251,245,.96);border:1px solid #ffffffbb;color:var(--ui-ink);text-shadow:none;box-shadow:0 8px 28px #16302a26;pointer-events:auto;max-height:38%;overflow:auto}
+/* Only an idle, non-required speech surface passes clicks to the actual room.
+   Keep controls as individual hit targets; footer whitespace also passes through. */
+#game-screen.player-experience #galgame-dialogue-layer.galgame-dialogue-passive .galgame-dialogue-copy { pointer-events:none; }
+#game-screen.player-experience #galgame-dialogue-layer.galgame-dialogue-passive .galgame-dialogue-copy :is(button,input,select,label,a,audio,video) { pointer-events:auto; }
+#game-screen.player-experience .galgame-speaker-system .galgame-dialogue-copy{left:14%;right:14%}
+#game-screen.player-experience .galgame-speaker-name{font-size:19px;font-weight:500;color:var(--ui-teal);margin-bottom:10px}
+#game-screen.player-experience .galgame-speaker-name:before{background:var(--ui-teal);width:21px;height:2px}
+#game-screen.player-experience .galgame-dialogue-text{font-size:22px;line-height:1.85;font-weight:400;color:var(--ui-ink)}
+#game-screen.player-experience .galgame-dialogue-long .galgame-dialogue-text{font-size:19px}
+#game-screen.player-experience .galgame-dialogue-dense .galgame-dialogue-text{font-size:17px}
+.ui-speech-actions{display:flex;align-items:center;justify-content:flex-end;gap:15px;margin-top:13px;padding-top:7px;border-top:1px solid #dfe5da}
+#game-screen.player-experience .ui-speech-actions .dialogue-history-toggle,#game-screen.player-experience .ui-speech-actions #dialogue-pacing-controls{position:static;inset:auto;background:none;border:0;padding:0;box-shadow:none;display:flex;color:var(--ui-sub);font-weight:400}
+#game-screen.player-experience .ui-speech-actions button{font-size:12px;min-height:32px;padding:3px 0;color:var(--ui-sub)}
+#game-screen.player-experience .dialogue-auto-control{font-size:12px;color:var(--ui-sub)}
+#game-screen.player-experience .galgame-voice-status{color:var(--ui-sub)}
+#game-screen.player-experience .galgame-voice-status button{background:#edf2e6;color:var(--ui-teal);border-color:#b8c8b3}
+#game-screen.player-experience .world-decision-panel{left:50%;right:auto;top:126px;bottom:auto;transform:translateX(-50%);z-index:32;width:min(650px,64%);max-height:calc(100% - 425px);overflow:auto;padding:22px 27px;border:1px solid #ffffffcc;border-radius:13px;background:rgba(253,252,246,.98);box-shadow:0 14px 42px #1d272c2b;color:var(--ui-ink);animation:none}
+.ui-response-caption{display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#326d68;gap:10px}.ui-response-caption small{font-size:11px;color:#617660}
+#game-screen.player-experience [data-response-kind=opening_response] #decision-type{display:none}
+#game-screen.player-experience #decision-type{font-size:12px;letter-spacing:1px;color:var(--ui-sub);margin:7px 0}
+#game-screen.player-experience #decision-question{font:500 25px "Noto Serif CJK SC",Georgia,serif;line-height:1.6;margin-bottom:17px;color:var(--ui-ink)}
+#game-screen.player-experience .decision-options{gap:8px}
+#game-screen.player-experience .option-btn{min-height:52px;padding:11px 14px;border:1px solid #e0e5d7;background:#f3f4ec;border-radius:8px;font-size:15px;font-weight:400;line-height:1.8;color:var(--ui-ink);display:flex;align-items:center;gap:13px;text-align:left;box-shadow:none}
+.ui-option-number{min-width:22px;padding-right:9px;border-right:1px solid #cad6c2;font:16px Georgia,serif;color:#536d5e}
+#game-screen.player-experience .option-btn.selected{background:#e6eee1;border-color:#9db7a2;box-shadow:inset 3px 0 #326d68}
+#game-screen.player-experience .option-btn.selected:after{content:"›";margin-left:auto;color:#326d68;font-size:24px}
+#game-screen.player-experience #submit-decision-btn{margin-top:13px;min-height:44px;width:auto;float:right;padding:10px 18px;border:0;border-radius:7px;background:var(--ui-teal);color:#fffaf0;font-size:14px;box-shadow:none}
+#game-screen.player-experience #submit-decision-btn:disabled,#game-screen.player-experience #submit-side-talk-btn:disabled{background:#dfe4d9;color:#7f8e7b}
+#ui-own-reply,#ui-back-options{background:none;border:0;color:#326d68;padding:13px 0;font-size:14px;min-height:44px}
+#ui-response-editor textarea{font-size:17px;line-height:1.8;background:#fffef9;border:1px solid #aebfac;border-radius:8px;padding:12px 14px}
+#game-screen.player-experience .side-talk-panel{left:22%;right:22%;bottom:36px;top:auto;transform:none;width:auto;max-height:48%;z-index:31;padding:22px 25px;border:1px solid #ffffffbb;border-radius:12px;background:rgba(252,251,245,.97);box-shadow:0 10px 30px #203c2c25;color:var(--ui-ink);animation:none}
+#game-screen.player-experience .side-talk-header h3{font-size:19px;font-weight:500;color:var(--ui-ink)}
+#game-screen.player-experience .side-talk-options{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:13px}
+#game-screen.player-experience .side-talk-option{width:auto;min-height:42px;padding:8px 12px;background:transparent;color:#356d67;border:1px solid #bacbb2;border-radius:6px;font-size:13px;line-height:1.7;box-shadow:none}
+#game-screen.player-experience .side-talk-option[aria-pressed=true]{background:#e6eee1}
+#game-screen.player-experience #side-talk-input{font-size:17px;line-height:1.8;min-height:65px;background:#fffefa;border:1px solid #c8d3c0;border-radius:8px;padding:11px 14px}
+#game-screen.player-experience #submit-side-talk-btn{min-height:44px;width:auto;display:block;margin-left:auto;padding:10px 22px;background:var(--ui-teal);color:#fffaf0;border:0;border-radius:7px;box-shadow:none}
+.ui-draft-note,.ui-input-hint{font-size:11px;color:#617660;line-height:1.8;margin-top:7px}
+#game-screen.player-experience.ui-side-composer .galgame-dialogue-copy{display:none}
+.ui-tool-panel{position:absolute;z-index:44;background:rgba(253,252,246,.99);border:1px solid #e1e7da;border-radius:13px;box-shadow:0 14px 38px #1d30232c;color:#253a3d;padding:23px 26px;max-height:calc(100% - 145px);overflow:auto}
+.ui-tool-panel[hidden],#ui-response-editor[hidden]{display:none!important}
+.ui-tool-panel header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}
+.ui-tool-panel h2{font:500 26px "Noto Serif CJK SC",Georgia,serif;margin:0}.ui-tool-panel header small{font:10px Georgia,serif;letter-spacing:2px;color:#617660}
+.ui-tool-close{font-size:26px;line-height:1;width:42px;height:42px;border:0;background:none;color:#617660}
+#ui-journal{right:28px;top:112px;bottom:28px;width:min(440px,44%)}
+.ui-journal-tabs{display:flex;flex-wrap:wrap;gap:9px;border-bottom:1px solid #dfe5d6;margin-bottom:18px}.ui-journal-tabs button{font-size:13px;background:none;border:0;border-bottom:2px solid transparent;border-radius:0;padding:10px 6px;color:#617660;min-height:44px}.ui-journal-tabs [aria-selected=true]{border-bottom-color:#326d68;color:#326d68}
+#ui-journal-now h3{font:500 23px "Noto Serif CJK SC",Georgia,serif;margin-bottom:12px}#ui-journal-now h4{font-size:14px;color:#326d68;margin:24px 0 12px}#ui-journal-now p{font-size:13px;line-height:1.9;color:#617277;padding:12px 0;border-bottom:1px solid #e3e8dc}
+#ui-journal-people article{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid #e1e7da}#ui-journal-people img{width:48px;height:67px;object-fit:cover;object-position:50% 20%;border-radius:7px;background:#e6eadc}#ui-journal-people strong{font-size:15px;font-weight:500}#ui-journal-people p{font-size:12px;color:#617660}#ui-journal-people button{margin-left:auto;background:none;border:0;color:#326d68;font-size:12px;min-height:44px}
+#game-screen.player-experience #ui-journal-history .dialogue-feed{position:static;inset:auto;max-height:none;height:auto;width:auto;border:0;background:transparent;display:block;padding:0;box-shadow:none;color:#253a3d}
+#game-screen.player-experience #ui-journal-history .message{border:0;border-radius:0;background:none;box-shadow:none;border-bottom:1px solid #e1e7da;padding:14px 0}.ui-journal-note{font-size:11px;color:#617660;padding-top:16px}
+.ui-guide-panel{left:28px;bottom:151px;width:min(390px,40%)}.ui-guide-panel h2{font-size:23px;line-height:1.7;margin:15px 0 10px}.ui-guide-panel>p{font-size:14px;line-height:1.9;color:#617277}.ui-guide-progress{font-size:12px;color:#326d68;border-top:3px solid #9fbba6;padding-top:13px;width:120px}.ui-guide-panel footer{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-top:18px}.ui-guide-panel small{font-size:11px;color:#617660}.ui-guide-panel button{background:none;border:0;color:#326d68;min-height:44px;padding:5px;font-size:13px}.ui-guide-keys{display:flex;flex-wrap:wrap;gap:6px;padding:16px 0}
+.ui-settings-panel{left:50%;top:20%;transform:translateX(-50%);width:min(450px,90%)}.ui-settings-panel label{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 0;border-bottom:1px solid #e1e7da;font-size:14px}.ui-settings-panel input{width:23px;height:23px;accent-color:#326d68}.ui-settings-panel p{font-size:12px;color:#617660;line-height:1.9;margin-top:20px}
+#ui-walk-target{position:absolute;width:24px;height:14px;border:2px solid #fffce4;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 5px #f6fae826;pointer-events:none;z-index:5}
+#game-screen.player-experience .world-decision-active .ui-control-strip,#game-screen.player-experience .world-side-talk-active .ui-control-strip,#game-screen.player-experience .world-decision-active #ui-objective,#game-screen.player-experience .world-side-talk-active #ui-objective,#game-screen.player-experience .world-decision-active .world-help{display:none}
+#game-screen.player-experience.ui-large .galgame-dialogue-text{font-size:26px}#game-screen.player-experience.ui-large .option-btn{font-size:18px}#game-screen.player-experience.ui-contrast .galgame-dialogue-copy,#game-screen.player-experience.ui-contrast .world-decision-panel{background:#fffefa}
+#game-screen.player-experience.ui-motion *{animation:none!important;transition:none!important}#game-screen.player-experience:not(.ui-hints) .ui-control-strip,#game-screen.player-experience:not(.ui-hints) .world-help{display:none}
+#game-screen.player-experience textarea:focus-visible,#game-screen.player-experience button:focus-visible{outline:3px solid #277e85;outline-offset:3px}
+@media(max-width:1200px){#game-screen.player-experience .galgame-dialogue-copy{left:18%;right:18%}#game-screen.player-experience .world-decision-panel{width:min(590px,68%);top:108px;padding:19px 22px}#game-screen.player-experience .galgame-dialogue-text{font-size:20px}#ui-objective{width:315px}.ui-game-nav{gap:1px}.ui-game-nav button{padding:7px 8px}.ui-guide-panel{width:340px}#ui-journal{width:410px}}
+@media(max-width:760px){#game-screen.player-experience.participant-mode .pixel-world{height:1100px;min-height:0}#game-screen.player-experience .pixel-world>.game-header{height:78px;padding:10px 14px;gap:8px}#game-screen.player-experience .ui-brand{grid-template-columns:30px auto;gap:5px}.ui-brand-mark{width:30px;height:36px;font-size:23px}#game-screen.player-experience .ui-brand h2{font-size:16px;letter-spacing:0}#game-screen.player-experience .ui-brand .eyebrow{font-size:10px}#game-screen.player-experience .ui-game-nav kbd{display:none}.ui-game-nav button{font-size:12px;min-width:44px;padding:5px}.game-header .game-actions{max-width:80px}#ui-objective{top:93px;left:15px;width:calc(100% - 30px);padding:15px 18px}#ui-objective-title{font-size:21px}#ui-objective #current-objective{font-size:12px}.ui-control-strip{left:15px;right:15px;bottom:28px;gap:10px;font-size:12px;padding:13px;display:grid}#game-screen.player-experience .world-help{left:15px;bottom:165px;max-width:calc(100% - 30px)}#game-screen.player-experience .galgame-portrait{height:43%;bottom:auto;top:83px;max-width:51%}#game-screen.player-experience .galgame-dialogue-copy{left:15px;right:15px;bottom:30px;padding:16px 18px;max-height:27%}#game-screen.player-experience .galgame-dialogue-text{font-size:17px}#game-screen.player-experience .galgame-speaker-name{font-size:17px}.ui-speech-actions{gap:15px;justify-content:flex-start;flex-wrap:wrap}#game-screen.player-experience .world-decision-panel{top:34%;width:calc(100% - 30px);max-height:43%;padding:18px 16px}#game-screen.player-experience #decision-question{font-size:21px}#game-screen.player-experience .option-btn{font-size:14px;padding:9px 10px;min-height:52px}#game-screen.player-experience .side-talk-panel{left:15px;right:15px;bottom:28px;max-height:46%;padding:18px}#ui-journal{left:15px;right:15px;width:auto;top:230px;bottom:27px;max-height:none}.ui-guide-panel{left:15px;right:15px;width:auto;bottom:203px}.ui-settings-panel{top:25%}#game-screen.player-experience.ui-large .galgame-dialogue-text{font-size:20px}#game-screen.player-experience.ui-large .option-btn{font-size:16px}}
+@media(prefers-reduced-motion:reduce){#game-screen.player-experience *{animation:none!important;transition:none!important}}
+@media(max-width:760px){#game-screen.player-experience .galgame-portrait{object-position:center top}}
+
+/* A speech surface is one stable frame, not a content-sized card. Keep the
+   speaker/status/footer in reserved tracks; only the text can scroll. */
+#game-screen.player-experience {
+  --ui-dialogue-inset: 22%;
+  --ui-dialogue-bottom: 42px;
+  --ui-dialogue-height: clamp(256px, 32%, 304px);
+  --ui-dialogue-font: 22px;
+  --ui-response-top: 126px;
+}
+#game-screen.player-experience .galgame-dialogue-copy,
+#game-screen.player-experience .galgame-speaker-system .galgame-dialogue-copy {
+  left: var(--ui-dialogue-inset);
+  right: var(--ui-dialogue-inset);
+  bottom: var(--ui-dialogue-bottom);
+  height: var(--ui-dialogue-height);
+  max-height: none;
+  padding: 18px 24px 14px;
+  display: grid;
+  grid-template-rows: 26px 24px minmax(0, 1fr) 40px;
+  gap: 6px;
+  overflow: hidden;
+  transition: none;
+}
+#game-screen.player-experience .galgame-speaker-name {
+  grid-row: 1;
+  min-width: 0;
+  margin: 0;
+}
+#game-screen.player-experience .galgame-voice-status {
+  grid-row: 2;
+  min-width: 0;
+  margin: 0;
+  flex-wrap: nowrap;
+  gap: 8px;
+  overflow: hidden;
+}
+#game-screen.player-experience #galgame-voice-status-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#game-screen.player-experience .galgame-voice-status button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+#game-screen.player-experience .galgame-dialogue-text,
+#game-screen.player-experience .galgame-dialogue-long .galgame-dialogue-text,
+#game-screen.player-experience .galgame-dialogue-dense .galgame-dialogue-text {
+  grid-row: 3;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  font-size: var(--ui-dialogue-font);
+  line-height: 1.7;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
+}
+#game-screen.player-experience .ui-speech-actions {
+  grid-row: 4;
+  min-width: 0;
+  margin: 0;
+  padding-top: 6px;
+  gap: 6px 12px;
+}
+#game-screen.player-experience .galgame-advance-indicator {
+  right: 8px;
+  bottom: 7px;
+}
+#game-screen.player-experience .world-decision-panel {
+  top: var(--ui-response-top);
+  max-height: calc(100% - var(--ui-response-top) - var(--ui-dialogue-bottom) - var(--ui-dialogue-height) - 16px);
+}
+#game-screen.player-experience.galgame-dialogue-active .world-help,
+#game-screen.player-experience.galgame-dialogue-active .ui-control-strip {
+  visibility: hidden;
+  pointer-events: none;
+}
+#game-screen.player-experience.ui-large { --ui-dialogue-font: 26px; }
+@media(max-width:1200px) {
+  #game-screen.player-experience {
+    --ui-dialogue-inset: 18%;
+    --ui-dialogue-font: 20px;
+    --ui-response-top: 108px;
+  }
+}
+@media(max-width:760px) {
+  #game-screen.player-experience {
+    --ui-dialogue-inset: 15px;
+    --ui-dialogue-bottom: 30px;
+    --ui-dialogue-height: 296px;
+    --ui-dialogue-font: 17px;
+    --ui-response-top: 26%;
+  }
+  #game-screen.player-experience .galgame-dialogue-copy,
+  #game-screen.player-experience .galgame-speaker-system .galgame-dialogue-copy {
+    padding: 16px 18px;
+    grid-template-rows: 24px 24px minmax(0, 1fr) 76px;
+  }
+  #game-screen.player-experience .ui-speech-actions {
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #game-screen.player-experience.ui-large { --ui-dialogue-font: 20px; }
+}
+
+/* Exploration prompts share a stack rather than overlapping each other or
+   retaining the legacy absolute-positioned key/circle pseudo element. */
+#ui-world-prompts {
+  position: absolute;
+  z-index: 12;
+  left: 28px;
+  right: 28px;
+  bottom: 99px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  pointer-events: none;
+}
+#game-screen.player-experience #ui-world-prompts .world-help,
+#game-screen.player-experience #ui-world-prompts .proximity-hint {
+  position: static;
+  inset: auto;
+  transform: none;
+  min-width: 0;
+}
+#game-screen.player-experience #ui-world-prompts .proximity-hint {
+  align-self: center;
+  max-width: min(420px, 100%);
+  padding: 9px 14px;
+}
+#game-screen.player-experience .proximity-hint::before {
+  content: none;
+  display: none;
+}
+#game-screen.player-experience.galgame-dialogue-active #ui-objective,
+#game-screen.player-experience.galgame-dialogue-active #ui-world-prompts {
+  display: none;
+}
+@media(max-width:760px) {
+  #ui-world-prompts { left: 15px; right: 15px; bottom: 165px; }
+  #game-screen.player-experience #ui-world-prompts .world-help { max-width: 100%; }
+}
+
+/* Continuous input uses real positions, not CSS easing behind collision state. */
+#game-screen.player-experience .sprite-layer { z-index: 5; }
+#game-screen.player-experience .pixel-world.ui-player-moving .pixel-sprite.player { transition: none; }
+#game-screen.player-experience .npc-nearby .sprite-name {
+  border-color: #326d68; background: #e5f0df; box-shadow: 0 0 0 2px #326d6826;
+}
+#game-screen.player-experience .npc-navigation-target .sprite-name {
+  border-color: #267e83; box-shadow: 0 0 0 3px #267e8333;
+}
+#game-screen.player-experience #ui-walk-target { z-index: 6; }
+#game-screen.player-experience #ui-walk-target::after {
+  content: attr(data-target-name); position: absolute; bottom: 18px; left: 50%;
+  transform: translateX(-50%); color: #253a3d; background: #fffef5; border-radius: 5px;
+  padding: 3px 7px; font-size: 12px; white-space: nowrap;
+}
+#game-screen.player-experience #ui-walk-target[data-target-name=""]::after { display: none; }
+
+#ui-private-continuation {
+  position: absolute; z-index: 31; left: var(--ui-dialogue-inset); right: var(--ui-dialogue-inset);
+  bottom: calc(var(--ui-dialogue-bottom) + var(--ui-dialogue-height) + 14px);
+  padding: 15px 18px; border-radius: 10px; background: rgba(252,251,245,.98);
+  color: #253a3d; box-shadow: 0 8px 24px #16302a26;
+}
+#ui-private-continuation header { display: flex; flex-wrap: wrap; gap: 7px 14px; justify-content: space-between; margin-bottom: 12px; }
+#ui-private-continuation strong { font-size: 14px; font-weight: 500; }
+#ui-private-continuation small { font-size: 11px; color: #617277; }
+#ui-private-continuation>div { display: flex; flex-wrap: wrap; gap: 8px; }
+#ui-private-continuation button { min-height: 44px; padding: 8px 14px; border: 1px solid #bacbb2; background: #edf2e7; border-radius: 7px; color: #326d68; font-size: 13px; }
+#ui-private-continuation #ui-private-end { margin-left: auto; background: transparent; }
+@media(max-width:760px) { #ui-private-continuation>div { display: grid; grid-template-columns: 1fr; } #ui-private-continuation #ui-private-end { margin-left: 0; } }
+
+/* Current utterance identity, not an emotion/relationship indicator. Active
+   portrait stays in place; the listener is quieter, never removed or swapped. */
+#game-screen.player-experience .galgame-dialogue-layer .galgame-portrait {
+  opacity: 1;
+  filter: brightness(.68) saturate(.80) drop-shadow(0 12px 22px #222e2426);
+  transition: opacity 130ms ease, filter 130ms ease;
+}
+#game-screen.player-experience .galgame-dialogue-layer.galgame-speaker-player .galgame-player-portrait,
+#game-screen.player-experience .galgame-dialogue-layer.galgame-speaker-npc .galgame-npc-portrait {
+  opacity: 1;
+  filter: brightness(1.03) saturate(1.02) drop-shadow(0 0 3px #a4e0d899) drop-shadow(0 12px 22px #16302a26);
+}
+#game-screen.player-experience .galgame-dialogue-layer.galgame-speaker-system .galgame-portrait,
+#game-screen.player-experience .galgame-dialogue-layer.galgame-no-partner .galgame-npc-portrait,
+#game-screen.player-experience .galgame-dialogue-layer .galgame-portrait.galgame-portrait-loading {
+  opacity: 0 !important;
+}
+#game-screen.player-experience .galgame-dialogue-layer .galgame-portrait.galgame-portrait-loading {
+  transition: none !important;
+}
+#game-screen.player-experience #galgame-speaker-name::after {
+  content: attr(data-delivery-label); flex: 0 0 auto; align-self: center;
+  border: 1px solid #9ebcb2; border-radius: 5px; padding: 2px 7px;
+  background: #e5eee6; color: #326d68; font: 11px/1.5 sans-serif; letter-spacing: .3px;
+}
+#game-screen.player-experience .pixel-sprite.dialogue-speaking .sprite-name {
+  color: #fffef5; background: #326d68; border-color: #326d68;
+  box-shadow: 0 0 0 3px #a4e0d877; font-weight: 600;
+}
+#game-screen.player-experience .pixel-sprite.dialogue-speaking .sprite-name::before {
+  content: "▸"; margin-right: 4px;
+}
+#game-screen.player-experience .pixel-sprite.dialogue-speaking .lab-contact-shadow {
+  border: 2px solid #529f94; background: #326d682b; width: 34px; height: 10px;
+}
+#game-screen.player-experience.ui-motion .galgame-dialogue-layer .galgame-portrait { transition: none; }
+@media(prefers-reduced-motion: reduce) {
+  #game-screen.player-experience .galgame-dialogue-layer .galgame-portrait { transition: none; }
+}
+
+#ui-stage-entry { position:absolute; z-index:12; top:112px; right:28px; width:min(285px,28%);
+  padding:16px 18px; border:1px solid #bdcbb6; border-radius:10px; background:rgba(252,251,245,.97); color:#253a3d; }
+#ui-stage-entry strong {font-size:15px;font-weight:500}
+#ui-stage-entry p {font-size:12px;line-height:1.7;color:#617277;margin:8px 0 12px}
+#ui-stage-entry button,#ui-private-key {min-height:44px;padding:8px 13px;border:1px solid #326d68;border-radius:7px;background:#326d68;color:#fffef5;font-size:13px}
+#ui-stage-entry button:disabled,#ui-private-key:disabled {opacity:.6;cursor:default}
+#ui-private-continuation #ui-private-key {border-color:#326d68;background:#326d68;color:#fffef5}
+@media(max-width:760px) {#ui-stage-entry {top:295px;right:15px;width:calc(100% - 30px)}}
+#ui-day-handoff{position:absolute;inset:78px 0 0;z-index:1600;display:grid;place-items:center;padding:24px;background:#20342ccc;backdrop-filter:blur(3px);pointer-events:auto}
+#ui-day-handoff[hidden]{display:none}
+.lab-day-card{width:min(520px,100%);max-height:100%;overflow:auto;padding:36px;background:#faf7ef;border:1px solid #d8ceb9;border-radius:14px;box-shadow:0 18px 60px #15272050;color:#283e3a}
+#ui-day-number{display:block;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:#417c70}
+#ui-day-title{margin:12px 0 18px;font-family:Georgia,"Songti SC",serif;font-size:30px;font-weight:500}
+#ui-day-note{line-height:1.8;font-size:15px;color:#52645e}
+#ui-day-record{margin:20px 0;padding:12px 16px;border-left:3px solid #b6c9b8;font-size:14px;line-height:1.7;white-space:pre-wrap}
+#ui-day-continue{min-height:44px;margin-top:14px;padding:10px 22px;border-radius:7px;border:1px solid #366c60;background:#366c60;color:#fff}
+#ui-day-continue:focus-visible{outline:3px solid #c49e59;outline-offset:4px}
+@media(max-width:760px){#ui-day-handoff{padding:16px}.lab-day-card{padding:24px}#ui-day-title{font-size:24px}}
+/* A reply to an actual opening question, not another four-choice examination. */
+#game-screen.player-experience [data-opening-continuation] .world-decision-panel{top:auto;bottom:var(--opening-reply-bottom,340px);max-height:44%;padding:18px 24px}
+#game-screen.player-experience [data-opening-continuation] #decision-question{display:none}
+#ui-opening-reply-note{margin:0 0 12px;font-size:13px;line-height:1.6;color:#4d6c62}
+#ui-opening-reply-note[hidden],#ui-opening-defer[hidden]{display:none}
+#ui-opening-defer{margin-top:13px;min-height:44px;padding:10px 15px;border:1px solid #b5c6b4;border-radius:7px;background:transparent;color:#376b60}
+#ui-opening-defer:disabled{opacity:.55}
+@media(max-width:760px){#game-screen.player-experience [data-opening-continuation] .world-decision-panel{bottom:var(--opening-reply-bottom,285px);width:calc(100% - 28px);max-height:42%;padding:16px}}
+#ui-lab-time{position:absolute;bottom:8px;left:260px;right:170px;z-index:18;display:flex;align-items:center;gap:8px;pointer-events:none;font-size:12px;color:#35584d}
+#ui-lab-time>span{padding:7px 10px;border-radius:6px;background:#faf7efeb}#ui-lab-time>button{pointer-events:auto;min-height:32px;padding:5px 10px;border:1px solid #bdcbb9;border-radius:6px;background:#faf7ef;color:#35665a}
+#ui-lab-time button[hidden]{display:none}
+#ui-lab-story,#ui-lab-core-handoff{position:absolute;bottom:105px;right:28px;width:min(380px,36%);max-height:48%;overflow:auto;z-index:25;padding:16px 18px;border:1px solid #e1ddca;border-radius:11px;background:#faf8eff5;box-shadow:0 9px 28px #263a2724;pointer-events:auto;color:#34594e}
+#ui-lab-story[hidden],#ui-lab-core-handoff[hidden]{display:none}
+#ui-lab-story p,#ui-lab-core-handoff p{margin:0 0 12px;font-size:13px;line-height:1.8}#ui-lab-story button,#ui-lab-core-handoff button{min-height:40px;padding:8px 12px;margin:4px 4px 0 0;border:1px solid #abc3a8;background:#f6f8ef;color:#356a5b;border-radius:6px}
+#ui-lab-story button[hidden]{display:none}#ui-lab-core-record p{font-size:12px;white-space:pre-wrap;margin-top:8px}
+#ui-lab-core-handoff details{margin-bottom:10px;font-size:12px}
+.world-decision-active #ui-lab-time{opacity:.75}.world-waiting #ui-lab-time>button{display:none}
+@media(max-width:760px){#ui-lab-time{left:14px;right:14px;top:82px;bottom:auto;flex-wrap:wrap;font-size:10px}#ui-lab-story,#ui-lab-core-handoff{left:14px;right:14px;bottom:112px;width:auto;max-height:43%}}
+
+.world-decision-active #ui-lab-time>button,.world-side-talk-active #ui-lab-time>button{display:none}
+/* Returning context can be long; keep the same close control reachable. */
+#game-screen.player-experience #side-talk-panel>.side-talk-header{position:sticky;top:0;z-index:2;background:var(--ui-paper);padding-bottom:10px}
+/* Actual either/or NPC replies: same question, direct choices, optional custom. */
+#ui-private-reply-choices[hidden]{display:none!important}
+#ui-private-reply-choices{margin-bottom:12px}
+#ui-private-continuation{max-height:42%;overflow:auto}
+[data-opening-continuation] #ui-own-reply{min-height:44px;margin-top:10px}
+
+/* Companion materials: source excerpt, coverage register, figure provenance,
+   then a blank review scaffold. No fabricated chart or spreadsheet values. */
+#workspace-review-materials{padding:18px 20px;margin-bottom:18px;border:1px solid #d7dfcc;border-radius:10px;background:#f7f8f0;color:#284d47}
+#workspace-review-materials>h3{font-size:21px;margin:0 0 10px}
+#workspace-review-materials p{font-size:13px;line-height:1.9;margin:12px 0}
+.review-material-card{margin:10px 0;padding:12px 15px;background:#fffef8;border:1px solid #dbe1d1;border-radius:8px}
+.review-material-card summary{font-weight:600;cursor:pointer;min-height:36px;line-height:1.8}
+.review-material-card blockquote{margin:14px 0 6px;padding:12px 14px;border-left:3px solid #b39a72;background:#f5f1e6;font-size:13px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}
+.review-material-card small{display:block;color:#637667;overflow-wrap:anywhere}
+.review-material-limit{color:#75634a;font-size:12px!important}
+.review-material-card table{width:100%;table-layout:fixed;border-collapse:collapse;margin:14px 0;font-size:12px}
+.review-material-card caption{text-align:left;padding:0 0 10px;font-weight:500}
+.review-material-card th,.review-material-card td{text-align:left;vertical-align:top;border:1px solid #dbe1d1;padding:9px;line-height:1.7;overflow-wrap:anywhere}
+.review-material-card th{background:#edf1e5}
+.review-figure-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0;font-size:12px}
+.review-figure-path span{padding:12px;border:1px dashed #b9c6ac;border-radius:6px;line-height:1.8;overflow-wrap:anywhere;background:#f5f7ee}
+.review-material-card pre{font-family:inherit;font-size:13px;line-height:2;white-space:pre-wrap;overflow-wrap:anywhere;padding:12px;background:#f3f5eb}
+.review-material-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.review-material-actions button{padding:8px 12px;min-height:44px;background:#f8faf1;color:#32695e;border:1px solid #b5c6ad;border-radius:6px;font-size:12px}
+.review-material-actions button:disabled{opacity:.55}
+@media(max-width:760px){#workspace-review-materials{padding:14px 12px}.review-material-card{padding:12px 10px}.review-figure-path{grid-template-columns:1fr;gap:8px}.review-material-card th,.review-material-card td{padding:7px 5px}}
+
+/* A readable Stage 2 mission, not a new mandatory checklist or score meter. */
+#workspace-review-episode{padding:18px 20px;margin-bottom:16px;border:1px solid #d4dfca;border-radius:10px;background:#f7f8ef;color:#2b514b}
+#workspace-review-episode h3{margin:0 0 10px;font-size:22px;font-weight:600}
+#workspace-review-episode p{font-size:13px;line-height:1.9;margin:10px 0}
+#workspace-review-episode [data-review-steps]{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+#workspace-review-episode [data-review-steps] li{padding:6px 9px;border:1px solid #dbe1d1;border-radius:6px;font-size:11px;background:#fffef8;color:#687966}
+#workspace-review-episode [data-review-steps] [data-done=true]{background:#edf3e6;border-color:#9bb795;color:#345c47}
+#workspace-review-episode [data-review-steps] [data-done=true]:before{content:'✓ ';font-weight:600}
+#workspace-review-episode [data-review-next]{padding:11px 13px;border-left:3px solid #779f85;background:#edf1e5}
+.review-episode-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+#workspace-review-episode button{padding:9px 12px;min-height:44px;border:1px solid #b3c6ae;border-radius:6px;background:#fffef7;color:#32685d;font-size:12px}
+#workspace-review-episode [data-review-primary]{background:#356a5d;color:#fff;border-color:#356a5d}
+#workspace-review-episode [data-review-members]{border-top:1px solid #dbe1d1;margin-top:13px;padding-top:10px}
+#workspace-review-episode [data-review-members] button{margin:4px 6px 4px 0}
+.review-episode-limits{font-size:12px;color:#78694c;margin-top:14px}.review-episode-limits summary{cursor:pointer;padding:6px 0}
+.review-episode-active #workspace-current-pane .workspace-current-card{display:none}
+.review-episode-active #artifact-task-summary .artifact-visual{display:none}
+.review-episode-active.review-episode-submitted #artifact-task-summary{display:none}
+#workspace-review-episode [data-review-progress-note]{font-size:11px;color:#7a7561}
+#workspace-review-episode [data-review-receipt]{margin:14px 0;padding:12px 14px;border:1px solid #d6dfcd;background:#fffef7;border-radius:7px}
+#workspace-review-episode [data-review-receipt] p{white-space:pre-wrap;overflow-wrap:anywhere}
+.workspace-submission-record p{white-space:pre-wrap;overflow-wrap:anywhere}
+.workspace-submission-record details{font-size:13px;margin:12px 0}
+@media(max-width:760px){#workspace-review-episode{padding:14px 12px}.review-episode-actions{gap:6px}#workspace-review-episode button{font-size:12px;padding:8px 10px}}
+
+/* Cooperative work packs: neutral source/record/note distinction, not grades. */
+#workspace-cooperation-commission{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+#workspace-cooperation-commission .coop-eyebrow{grid-column:1/-1}
+.coop-eyebrow{color:#527d78;font-weight:750;letter-spacing:.03em}
+.coop-commission-row{background:#f3f4ec;border:1px solid #dbe1d1;border-radius:10px;padding:12px 14px;min-width:0}
+.coop-commission-row strong{font-size:.85rem;color:#2e6460}.coop-commission-row p{margin:6px 0 0;font-size:.93rem;line-height:1.65}
+#workspace-cooperation-pack{padding:16px 0;border-bottom:1px solid #d9ddce;margin-bottom:18px}
+#workspace-cooperation-pack h3,#workspace-notes-pane h3{font-size:1.22rem;margin:6px 0 10px}
+.coop-source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.coop-source-card,.coop-record-card{border:1px solid #d8ded0;border-radius:12px;background:#fffef9;padding:14px;margin:10px 0;min-width:0}
+.coop-source-card h4,.coop-record-card h4{margin:7px 0;font-size:1rem}.coop-source-tag,.coop-record-limit{display:block;font-size:.78rem;color:#627c7b}
+.coop-record-card blockquote,.coop-notebook-citations blockquote{margin:12px 0;padding:10px 14px;border-left:3px solid #879f94;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;background:#f2f4ed}
+.coop-record-card button,.coop-source-card button,#workspace-notes-pane button,#workspace-open-notes{border:1px solid #b7c9ad;border-radius:8px;padding:9px 12px;background:#f1f5e9;color:#285d58;font-weight:600;margin:4px 8px 4px 0;cursor:pointer}
+#workspace-notes-pane{padding:6px 0}.coop-note-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}
+.coop-note-fields label{display:flex;flex-direction:column;gap:7px;color:#315f5a;font-weight:650}.coop-note-fields textarea{width:100%;min-height:112px;box-sizing:border-box;border:1px solid #bfccb3;background:#fffef8;border-radius:8px;padding:10px;font:inherit;color:#263e3c;resize:vertical;line-height:1.6}
+.coop-notebook-citations{border:1px dashed #aabdad;border-radius:10px;padding:14px;background:#f7f6ec}.coop-notebook-citations article+article{border-top:1px solid #d6dece;margin-top:12px;padding-top:10px}
+.coop-note-hint,.coop-empty{display:block;font-size:.85rem;color:#637877;line-height:1.7}.coop-note-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin:12px 0}
+#workspace-coop-archive-label{color:#677e77;font-size:.9rem;margin-top:20px}#workspace-tabs{flex-wrap:wrap}
+@media(max-width:640px){#workspace-cooperation-commission,.coop-note-fields,.coop-source-grid{grid-template-columns:1fr}.coop-note-fields textarea{min-height:96px}}
+.coop-availability{grid-column:1/-1;margin:0;color:#476b62;font-size:.85rem;border-left:3px solid #9eaf98;padding:4px 10px}
+.coop-note-history{margin:14px 0;padding:12px;border:1px solid #d8dfcf;border-radius:10px}.coop-note-history pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.65}
+.review-episode-active #workspace-current-pane .workspace-current-card{display:block}
+#workspace-current-pane .artifact-visual{display:none}.coop-source-card p,.coop-source-card h4,.coop-record-card h4{overflow-wrap:anywhere}
+.coop-consult-members{padding:14px;background:#f3f5eb;border:1px solid #ced9c4;border-radius:10px;margin-bottom:14px}.coop-consult-members p{font-size:.85rem;line-height:1.65;color:#566e67}
+.social-discovery-intro{padding:4px 0 14px}.social-discovery-intro h3{margin:0 0 8px}.social-discovery-intro p,.social-help-routes p{line-height:1.8;overflow-wrap:anywhere}
+#ui-journal-people .social-member-card{align-items:flex-start}.social-member-copy{flex:1;min-width:0}.social-member-status{line-height:1.8}
+.social-testimony{border:1px solid #d5dfcd;border-radius:8px;padding:9px 12px;margin:9px 0;background:#f9faf2}.social-testimony summary,.social-help-routes summary{cursor:pointer;font-size:12px;line-height:1.7;color:#315f59}
+.social-testimony blockquote{margin:12px 0;font-size:13px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}.social-testimony small{font-size:11px;color:#677866;line-height:1.8}
+.social-help-routes{padding:15px;border:1px dashed #b5c7ab;border-radius:10px;margin:18px 0;background:#f3f6eb}.social-help-routes p{font-size:13px}
+#workspace-work-episode{padding:18px 20px;margin:16px 0;border:1px solid #d4dfca;border-radius:10px;background:#f7f8ef;color:#2b514b}
+#workspace-work-episode h3{margin:0 0 10px;font-size:22px;font-weight:600}#workspace-work-episode p{font-size:13px;line-height:1.9;margin:10px 0}
+#workspace-work-episode [data-work-next]{padding:11px 13px;border-left:3px solid #779f85;background:#edf1e5}
+#workspace-work-episode button{padding:9px 12px;min-height:44px;border:1px solid #b3c6ae;border-radius:6px;background:#fffef7;color:#32685d;font-size:12px}#workspace-work-episode [data-work-primary]{background:#356a5d;color:#fff;border-color:#356a5d}
+#workspace-work-episode button:disabled{opacity:.55;cursor:default}
+@media(max-width:640px){#ui-journal-people .social-member-card{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px}#ui-journal-people .social-member-card>button{grid-column:2;margin-left:0;text-align:left}#ui-journal-people .social-member-card img{width:44px;height:62px}#workspace-work-episode{padding:14px 12px}}
+#workspace-work-revision{border-top:1px dashed #b8cbb2;padding:12px 0;margin-top:12px}#workspace-work-revision strong{color:#345f56;font-size:14px}#workspace-work-revision p{line-height:1.8;font-size:12px;color:#586d60}
+#workspace-work-revision button{padding:9px 12px;min-height:44px;background:#edf3e5;color:#315f55;border:1px solid #b5c9ab;border-radius:7px}
+#side-talk-options button{white-space:normal;overflow-wrap:anywhere;line-height:1.8;text-align:left}

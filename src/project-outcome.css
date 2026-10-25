@@ -1,0 +1,7 @@
+#ui-project-outcome[hidden]{display:none}
+#ui-project-outcome{position:absolute;inset:0;z-index:1800;display:grid;place-items:center;background:#080b11;color:#f6f2e9;padding:24px}
+.project-outcome-card{max-width:560px;text-align:center;line-height:1.8}
+.project-outcome-card h2{font-size:clamp(24px,5vw,40px);letter-spacing:.12em}
+.project-outcome-card p{white-space:pre-wrap;text-align:left}
+.project-outcome-card button{margin-top:20px;padding:12px 18px;min-height:44px;border:1px solid #e7d8ac;border-radius:6px;background:#282a2c;color:#fff;cursor:pointer}
+.project-outcome-card button:focus-visible{outline:3px solid #e7d8ac;outline-offset:4px}

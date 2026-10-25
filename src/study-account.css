@@ -1,0 +1,33 @@
+/* Credentials live outside the game workspace and remain independent of saves. */
+.study-account-setup { margin: 0 0 1.15rem; }
+.study-account-modes { display: flex; gap: .45rem; margin-bottom: .85rem; }
+.study-account-modes button { flex: 1; min-height: 42px; padding: .55rem .65rem; font: inherit; color: var(--ink, #193943); background: transparent; border: 1px solid #bcc8b4; border-radius: 8px; }
+.study-account-modes button[aria-pressed="true"] { background: #e3e9dc; border-color: #6c8264; font-weight: 700; }
+.study-account-field { display: grid; gap: .35rem; margin: .75rem 0; }
+.study-account-field label { font-size: .9rem; }
+.study-account-field input { box-sizing: border-box; width: 100%; min-width: 0; min-height: 44px; padding: .65rem .75rem; font: inherit; border: 1px solid #b9c6ae; border-radius: 6px; background: #fffdf8; color: #193943; }
+.study-account-field input:focus-visible, .study-account-modes button:focus-visible { outline: 3px solid #75909a; outline-offset: 2px; }
+#study-account-status, #study-account-password-status { margin: .6rem 0; font-size: .9rem; line-height: 1.6; overflow-wrap: anywhere; }
+#study-account-status:empty, #study-account-password-status:empty { display: none; }
+.study-account-feedback { margin: 1rem 0 .55rem; padding: .7rem .8rem; border: 1px solid #b6c9bf; border-radius: 8px; background: #edf4ef; scroll-margin-block: 18px; }
+.study-account-feedback.has-error { border-color: #c2a881; background: #fff7e8; }
+.study-account-feedback #study-account-status { margin: 0; }
+.study-account-feedback button { display: block; width: 100%; min-height: 44px; margin-top: .6rem; white-space: normal; }
+.study-account-feedback [hidden], .study-account-feedback[hidden] { display: none; }
+#study-account-owner-note { font-size: .9rem; line-height: 1.65; }
+.study-account-cloud-password { width: 100%; margin-top: .55rem; padding: .55rem .65rem; font: inherit; font-size: .8rem; border: 1px solid #bcc8b4; border-radius: 6px; background: transparent; color: inherit; }
+.lab-entry-shell .study-account-password-dialog { box-sizing: border-box; width: min(440px, calc(100vw - 24px)); max-height: calc(100svh - 24px); padding: 1.2rem; overflow-y: auto; }
+.study-account-password-dialog h2 { margin: 0 0 .7rem; font-size: 1.25rem; }
+.study-account-password-dialog p { line-height: 1.65; font-size: .9rem; }
+.study-account-dialog-actions { display: flex; justify-content: flex-end; gap: .6rem; margin-top: 1rem; }
+.study-account-dialog-actions button { min-height: 44px; }
+@media (max-width: 480px) {
+  .study-account-modes button { padding: .55rem .35rem; font-size: .88rem; }
+  .lab-entry-shell .study-account-password-dialog { padding: 1rem; }
+  .study-account-dialog-actions { display: grid; grid-template-columns: 1fr 1fr; }
+}
+
+.study-account-setup [hidden], .study-account-extra-password[hidden], .study-account-cloud-password[hidden] { display: none; }
+.study-account-extra-password { margin-top: .75rem; }
+
+@media (max-width: 360px) { .study-account-dialog-actions { grid-template-columns: 1fr; } }

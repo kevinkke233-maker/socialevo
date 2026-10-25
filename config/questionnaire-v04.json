@@ -1,0 +1,3494 @@
+{
+  "schemaVersion": "socialevonpc-questionnaire-catalog-v1",
+  "version": "full-package-v0.4-no-followup-20261019",
+  "locales": [
+    "zh",
+    "en"
+  ],
+  "items": [
+    {
+      "id": "P04_1",
+      "displayId": "1",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色后续的回应会联系到我之前做过的事情。",
+        "en": "The characters’ later responses referred to things I had done earlier."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_2",
+      "displayId": "2",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我与角色早期的互动，影响了他们后来与我相处的方式。",
+        "en": "My early interactions with the characters influenced how they interacted with me later."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_3",
+      "displayId": "3",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色之间发生的交流，影响了他们之后与我互动的方式。",
+        "en": "Conversations between the characters influenced how they interacted with me afterwards."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_4",
+      "displayId": "4",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "随着互动推进，角色对我的态度发生了变化。",
+        "en": "The characters’ attitudes towards me changed as our interactions progressed."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_5",
+      "displayId": "5",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色后来处理与我有关的事情时，做法与起初有所不同。",
+        "en": "The way the characters handled matters involving me later differed from how they did so at the beginning."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_6",
+      "displayId": "6",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "再次遇到相似问题时，角色采取了不同于先前的应对方式。",
+        "en": "When a similar issue arose again, the characters responded differently from before."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_7",
+      "displayId": "7",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我能理解角色为什么改变对我的态度或做法。",
+        "en": "I could understand why the characters changed their attitudes towards me or the way they acted."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_8",
+      "displayId": "8",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色对我的态度变化，与我们此前经历的事情相符。",
+        "en": "Changes in the characters’ attitudes towards me were consistent with what we had experienced together earlier."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_9",
+      "displayId": "9",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色改变做法的幅度，与当时发生的事情是相称的。",
+        "en": "The extent to which the characters changed how they acted was proportionate to what had happened."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_10",
+      "displayId": "10",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "不同阶段中，同一个角色仍保留着可辨认的个性。",
+        "en": "Individual characters retained recognisable personalities across different stages."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_11",
+      "displayId": "11",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色在前后互动中表现出的做事风格是连贯的。",
+        "en": "The characters’ ways of handling situations were coherent across earlier and later interactions."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_12",
+      "displayId": "12",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "角色后来重视的事情，与他们此前表现出的立场是衔接的。",
+        "en": "What the characters considered important later made sense in relation to their earlier positions."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_13",
+      "displayId": "13",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这局游戏让我想到可以用于其他团队情境的具体处理办法。",
+        "en": "This game gave me ideas for specific ways to handle situations in other teams."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_14",
+      "displayId": "14",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我觉得这局游戏中经历的团队问题，与现实合作中的问题有联系。",
+        "en": "I felt that the team issues I experienced in this game were relevant to issues in real-life collaboration."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_15",
+      "displayId": "15",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这局游戏让我更有信心在陌生团队中主动澄清职责。",
+        "en": "This game made me feel more confident about proactively clarifying responsibilities in an unfamiliar team."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_16",
+      "displayId": "16",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这局游戏让我更有信心提出可行的责任边界。",
+        "en": "This game made me feel more confident about proposing workable boundaries for my responsibilities."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_17",
+      "displayId": "17",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这局游戏让我更容易判断一个问题需要核实哪些信息。",
+        "en": "This game made it easier for me to identify what information needs to be checked when a problem arises."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_18",
+      "displayId": "18",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这局游戏帮助我意识到讨论贡献归属时，可以依据哪些具体记录。",
+        "en": "This game helped me recognise what specific records could be used when discussing who contributed what."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_19",
+      "displayId": "19",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我愿意在现实合作中尝试这局游戏里接触到的处理方式。",
+        "en": "I would be willing to try approaches I encountered in this game in real-life collaboration."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_20",
+      "displayId": "20",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "以后遇到类似问题时，我打算参考这局游戏中形成的经验。",
+        "en": "When similar issues arise in the future, I intend to draw on the experiences I had in this game."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_21",
+      "displayId": "21",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这些角色的表现让我觉得他们是有自身想法的人物。",
+        "en": "The characters’ behaviour gave me the impression that they had thoughts of their own."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_22",
+      "displayId": "22",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "这些角色的回应在当时的情境中显得自然。",
+        "en": "The characters’ responses felt natural in the situations in which they occurred."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_23",
+      "displayId": "23",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "与这些角色互动时，我觉得他们有各自关心的事情。",
+        "en": "When interacting with the characters, I felt that they each had things that mattered to them."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_24",
+      "displayId": "24",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "总体而言，这些角色在这个故事中显得真实。",
+        "en": "Overall, the characters felt real within this story."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_25",
+      "displayId": "25",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我的注意力集中在实验室里正在发生的事情上。",
+        "en": "My attention was focused on what was happening in the lab."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_26",
+      "displayId": "26",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "游戏进行时，我很少想到游戏之外的事情。",
+        "en": "While playing, I rarely thought about things outside the game."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_27",
+      "displayId": "27",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我有身处这个实验室情境中的感觉。",
+        "en": "I felt as though I was in the lab setting."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_28",
+      "displayId": "28",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我能够表达自己在情境中的立场。",
+        "en": "I could express my own position in the situation."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_29",
+      "displayId": "29",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我有空间选择如何处理遇到的人际问题。",
+        "en": "I had room to choose how to handle the interpersonal issues I encountered."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_30",
+      "displayId": "30",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我的选择会影响后续互动。",
+        "en": "My choices influenced subsequent interactions."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_31",
+      "displayId": "31",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "在游戏中，我觉得自己是实验室团队的一员。",
+        "en": "In the game, I felt that I was a member of the lab team."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_32",
+      "displayId": "32",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我觉得团队中有自己的位置。",
+        "en": "I felt that I had a place in the team."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_33",
+      "displayId": "33",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我觉得自己被其他成员接纳。",
+        "en": "I felt accepted by the other members."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_34",
+      "displayId": "34",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "面对一项有明确分工的任务，我愿意依靠这个团队完成他们负责的部分。",
+        "en": "For a task with clearly assigned responsibilities, I would be willing to rely on this team to complete their part."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_35",
+      "displayId": "35",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "在我无法独自核实所有细节时，我仍愿意依赖这个团队提供的信息。",
+        "en": "When I could not check every detail myself, I would still be willing to rely on information provided by this team."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_36",
+      "displayId": "36",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "如果一项共同任务的结果会影响到我，我仍愿意把其中一部分交给这个团队处理。",
+        "en": "If the outcome of a shared task would affect me, I would still be willing to let this team handle part of it."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_37",
+      "displayId": "37",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "整体而言，我享受这局游戏体验。",
+        "en": "Overall, I enjoyed the game."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_38",
+      "displayId": "38",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "游戏中的人际压力让我感到不适。",
+        "en": "The interpersonal pressure in the game made me feel uncomfortable."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_39",
+      "displayId": "39",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "等待角色回应打断了我的投入。",
+        "en": "Waiting for the characters to respond disrupted my engagement with the game."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_40",
+      "displayId": "40",
+      "type": "comparative_ordinal5",
+      "question": {
+        "zh": "我觉得角色有时是在迎合我，而不是表达自己的立场。",
+        "en": "I felt that the characters sometimes tried to please me rather than express their own positions."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "1 明显更符合游戏 A",
+            "en": "1 Describes Game A much better"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "2 略微更符合游戏 A",
+            "en": "2 Describes Game A slightly better"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "3 两局符合程度差不多",
+            "en": "3 Describes both games about equally"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "4 略微更符合游戏 B",
+            "en": "4 Describes Game B slightly better"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "5 明显更符合游戏 B",
+            "en": "5 Describes Game B much better"
+          }
+        },
+        {
+          "value": "unable_to_compare",
+          "label": {
+            "zh": "无法比较：缺少可比的经历，或无法形成判断。",
+            "en": "Unable to compare: I lack comparable experiences or cannot form a judgement."
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_A1",
+      "displayId": "A1",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "这些角色的表现让我觉得他们是有自身想法的人物。",
+        "en": "The characters’ behaviour gave me the impression that they had thoughts of their own."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_A2",
+      "displayId": "A2",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "这些角色的回应在当时的情境中显得自然。",
+        "en": "The characters’ responses felt natural in the situations in which they occurred."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_A3",
+      "displayId": "A3",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "与这些角色互动时，我觉得他们有各自关心的事情。",
+        "en": "When interacting with the characters, I felt that they each had things that mattered to them."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_A4",
+      "displayId": "A4",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "总体而言，这些角色在这个故事中显得真实。",
+        "en": "Overall, the characters felt real within this story."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_C1",
+      "displayId": "C1",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "在陌生团队中，我有信心明确询问自己的职责。",
+        "en": "In an unfamiliar team, I feel confident about asking clearly what my responsibilities are."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_C2",
+      "displayId": "C2",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "面对任务范围不清的要求，我有信心提出可行的责任边界。",
+        "en": "When the scope of a task is unclear, I feel confident about proposing workable boundaries for my responsibilities."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_C3",
+      "displayId": "C3",
+      "type": "agreement_ordinal5",
+      "question": {
+        "zh": "讨论贡献归属时，我有信心说明自己实际完成的工作。",
+        "en": "When discussing credit for contributions, I feel confident about explaining the work I actually completed."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "zh": "非常不同意",
+            "en": "Strongly disagree"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "zh": "不同意",
+            "en": "Disagree"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "zh": "中立",
+            "en": "Neither agree nor disagree"
+          }
+        },
+        {
+          "value": "4",
+          "label": {
+            "zh": "同意",
+            "en": "Agree"
+          }
+        },
+        {
+          "value": "5",
+          "label": {
+            "zh": "非常同意",
+            "en": "Strongly agree"
+          }
+        },
+        {
+          "value": "NA",
+          "label": {
+            "zh": "不适用",
+            "en": "Not applicable"
+          }
+        },
+        {
+          "value": "UJ",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_41",
+      "displayId": "41",
+      "type": "overall_preference",
+      "question": {
+        "zh": "如果有后续内容，你更愿意继续玩哪个版本？",
+        "en": "If more content were available, which version would you prefer to continue playing?"
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": [
+        {
+          "value": "A",
+          "label": {
+            "zh": "游戏 A",
+            "en": "Game A"
+          }
+        },
+        {
+          "value": "B",
+          "label": {
+            "zh": "游戏 B",
+            "en": "Game B"
+          }
+        },
+        {
+          "value": "both_equally",
+          "label": {
+            "zh": "两局都愿意，程度差不多",
+            "en": "I would be equally willing to continue both"
+          }
+        },
+        {
+          "value": "neither",
+          "label": {
+            "zh": "两局都不想继续",
+            "en": "I would not want to continue either"
+          }
+        },
+        {
+          "value": "unable_to_judge",
+          "label": {
+            "zh": "无法判断",
+            "en": "Unable to judge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "P04_42",
+      "displayId": "42",
+      "type": "free_text_optional",
+      "question": {
+        "zh": "请举例比较 A 和 B 中角色前后表现的变化，以及你如何理解这种差别。",
+        "en": "Please compare changes in how characters behaved across A and B, and explain how you understood the difference."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_43",
+      "displayId": "43",
+      "type": "free_text_optional",
+      "question": {
+        "zh": "请说明一种你觉得可以用于其他团队情境的处理方式，以及你打算怎样使用。",
+        "en": "Describe one approach you feel could be used in another team situation, and how you would use it."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_44",
+      "displayId": "44",
+      "type": "free_text_optional",
+      "question": {
+        "zh": "哪一段互动最影响你对两个版本的整体评价？为什么？",
+        "en": "Which interaction had the greatest impact on your overall evaluation of the two versions? Why?"
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_X1a",
+      "displayId": "X1a",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请写出你此时会发给小组的一段回复。",
+        "en": "Write a message you would send to the team at this point."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_X1b",
+      "displayId": "X1b",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请说明你接下来首先会采取的一个行动。",
+        "en": "State the first action you would take next."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_X2a",
+      "displayId": "X2a",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请写出你此时会向负责人或小组表达的一段话。",
+        "en": "Write what you would say to the organiser or team at this point."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_X2b",
+      "displayId": "X2b",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请说明你接下来首先会采取的一个行动。",
+        "en": "State the first action you would take next."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_Y1a",
+      "displayId": "Y1a",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请写出你此时会发给小组的一段回复。",
+        "en": "Write a message you would send to the team at this point."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_Y1b",
+      "displayId": "Y1b",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请说明你接下来首先会采取的一个行动。",
+        "en": "State the first action you would take next."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_Y2a",
+      "displayId": "Y2a",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请写出你此时会向负责人或小组表达的一段话。",
+        "en": "Write what you would say to the organiser or team at this point."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    },
+    {
+      "id": "P04_Y2b",
+      "displayId": "Y2b",
+      "type": "written_situation_response",
+      "question": {
+        "zh": "请说明你接下来首先会采取的一个行动。",
+        "en": "State the first action you would take next."
+      },
+      "required": false,
+      "allowSkip": true,
+      "options": []
+    }
+  ],
+  "forms": {
+    "comparison": {
+      "id": "comparison",
+      "title": {
+        "zh": "实验室游戏与新情境问卷",
+        "en": "Lab Game Experience and New Situations Questionnaire"
+      },
+      "intro": [
+        {
+          "zh": "请在完成两局游戏后，根据你实际经历的互动进行比较。",
+          "en": "After completing both games, compare the interactions you actually experienced."
+        },
+        {
+          "zh": "- 游戏 A：你先玩的那一局。",
+          "en": "- Game A: The game you played first."
+        },
+        {
+          "zh": "- 游戏 B：你后玩的那一局。",
+          "en": "- Game B: The game you played second."
+        },
+        {
+          "zh": "这里的“角色”指各局中与你互动的实验室成员，“团队”指该局的实验室群体，“我”指你扮演的新成员。“早期”“后来”“不同阶段”指每一局内部的过程。",
+          "en": "“Characters” refers to the lab members you interacted with in each game, “team” refers to that game's lab group, and “I” refers to you in your role as the new member. References to earlier or later interactions and different stages concern the process within each game."
+        },
+        {
+          "zh": "请综合你实际接触的人物作答，不要求所有角色表现相同，也不必只评价你最喜欢的一位。本问卷关注角色的对话、行为及你的体验，而不是画面是否逼真。这些对比题没有标准答案，两个版本表现相似或都没有明显变化，也是有效回答。你可以跳过不愿回答的问题。",
+          "en": "Consider your overall experience with the characters you actually encountered. They do not all have to have behaved in the same way, and you do not need to focus only on your favourite character. This questionnaire concerns dialogue, behaviour, and your experience rather than how realistic the graphics look. There are no correct answers to the comparison statements. Similar experiences, including not noticing changes in either game, are valid responses. You may skip questions you do not wish to answer."
+        },
+        {
+          "zh": "对每条陈述，请分别考虑 A 和 B 的经历，再选择哪一局更符合该陈述。",
+          "en": "For each statement, consider your experience in A and B separately, then select which game the statement describes more accurately."
+        },
+        {
+          "zh": "“差不多”表示有足够经历作比较且两局接近；“无法比较”表示没有足够依据。请勿把它们混用。选更符合某一局，只表示该陈述更符合那一局的经历。",
+          "en": "Select the midpoint when you have enough experience to compare and the games are similar. Select “Unable to compare” when you lack sufficient grounds. Selecting one game means only that the statement describes your experience in that game more accurately."
+        }
+      ],
+      "sections": [
+        {
+          "id": "history",
+          "title": {
+            "zh": "前后互动的联系",
+            "en": "Connections between earlier and later interactions"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_1",
+            "P04_2",
+            "P04_3"
+          ],
+          "after": [
+            {
+              "zh": "第3题需要你在两局都观察到角色之间的交流，并有后续互动可作比较。任一局缺少这种经历，或无法判断影响时，请选“无法比较”。",
+              "en": "Question 3 requires conversations between characters and subsequent interactions in both games. If either game lacks this experience, or you cannot judge its influence, select “Unable to compare”."
+            }
+          ],
+          "groupTitle": {
+            "zh": "第一部分 互动过程中的人物表现",
+            "en": "Part 1 Character Behaviour Across Interactions"
+          }
+        },
+        {
+          "id": "change",
+          "title": {
+            "zh": "是否察觉到变化",
+            "en": "Noticing changes"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_4",
+            "P04_5",
+            "P04_6"
+          ],
+          "after": [
+            {
+              "zh": "这些变化可以是积极的，也可以是消极的。只有一局出现变化时，第4、5题可选更符合那一局；两局都没有明显变化时可选“差不多”。第6题需要两局都有再次遇到相似问题的经历，否则选“无法比较”。变化更明显不等于质量更好。",
+              "en": "Changes may have been positive or negative. If you noticed change in only one game, Questions 4 and 5 may describe that game better. If neither game showed noticeable change, select the midpoint. Question 6 requires a similar issue to recur in both games; otherwise select “Unable to compare”. More noticeable change does not necessarily mean better quality."
+            }
+          ]
+        },
+        {
+          "id": "understanding",
+          "title": {
+            "zh": "如何理解这些变化",
+            "en": "Understanding these changes"
+          },
+          "before": [
+            {
+              "zh": "第7至9题需要两局都出现你实际注意到的、与该题有关的变化。只在一局或两局都未注意到相应变化时，请选“无法比较”，不要将未发生变化的一局直接当作变化不合理。",
+              "en": "Questions 7–9 require relevant changes that you actually noticed in both games. If you noticed relevant change in only one game or in neither game, select “Unable to compare”. Do not treat the absence of change as an unreasonable change."
+            }
+          ],
+          "itemIds": [
+            "P04_7",
+            "P04_8",
+            "P04_9"
+          ],
+          "after": [
+            {
+              "zh": "第8题需要两局都有可判断的态度变化；第9题需要两局都有可判断的做法变化与触发事件。若无法对照，请选“无法比较”，也可以在开放题说明原因。",
+              "en": "Question 8 requires observable attitude changes in both games. Question 9 requires observable changes in how characters acted, together with relevant triggering events in both games. If you cannot compare them, select “Unable to compare”. You may explain why in the open-ended answers."
+            }
+          ]
+        },
+        {
+          "id": "coherence",
+          "title": {
+            "zh": "人物的前后连贯性",
+            "en": "Coherence across interactions"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_10",
+            "P04_11",
+            "P04_12"
+          ],
+          "after": [
+            {
+              "zh": "连贯不意味着角色必须始终说同样的话，也不意味着其态度不能变化。",
+              "en": "Coherence does not require characters to say the same things all the time, and their attitudes may still change."
+            }
+          ]
+        },
+        {
+          "id": "application",
+          "title": {
+            "zh": "与其他情境的联系",
+            "en": "Connections to other situations"
+          },
+          "before": [
+            {
+              "zh": "请比较两局分别带给你的应用想法、信心和意愿，使用上面的 A／B 对比选项。你不需要已经在现实中使用过这些做法。新情境作答由研究者在附录所列时点另行收集。",
+              "en": "Compare the ideas, confidence, and intentions each game gave you, using the A/B comparison options above. You do not need to have used these approaches in real life. The researcher collects new situation responses separately at the times specified in the appendices."
+            }
+          ],
+          "itemIds": [
+            "P04_13",
+            "P04_14"
+          ],
+          "after": [],
+          "groupTitle": {
+            "zh": "第二部分 其他团队情境中的应用想法",
+            "en": "Part 2 Thoughts About Applying Approaches in Other Teams"
+          }
+        },
+        {
+          "id": "application_confidence",
+          "title": {
+            "zh": "应用信心",
+            "en": "Confidence in applying approaches"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_15",
+            "P04_16"
+          ],
+          "after": []
+        },
+        {
+          "id": "problem_understanding",
+          "title": {
+            "zh": "对问题处理的认识",
+            "en": "Understanding how to handle problems"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_17",
+            "P04_18"
+          ],
+          "after": []
+        },
+        {
+          "id": "application_intention",
+          "title": {
+            "zh": "应用意愿",
+            "en": "Intention to apply approaches"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_19",
+            "P04_20"
+          ],
+          "after": []
+        },
+        {
+          "id": "authenticity",
+          "title": {
+            "zh": "对人物的整体感受",
+            "en": "Overall impressions of the characters"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_21",
+            "P04_22",
+            "P04_23",
+            "P04_24"
+          ],
+          "after": [],
+          "groupTitle": {
+            "zh": "第三部分 整体游玩体验",
+            "en": "Part 3 Overall Game Experience"
+          }
+        },
+        {
+          "id": "immersion",
+          "title": {
+            "zh": "进入游戏情境的感受",
+            "en": "Feeling involved in the game setting"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_25",
+            "P04_26",
+            "P04_27"
+          ],
+          "after": []
+        },
+        {
+          "id": "agency",
+          "title": {
+            "zh": "表达与选择",
+            "en": "Expression and choice"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_28",
+            "P04_29",
+            "P04_30"
+          ],
+          "after": []
+        },
+        {
+          "id": "belonging",
+          "title": {
+            "zh": "与团队的关系",
+            "en": "Relationship with the team"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_31",
+            "P04_32",
+            "P04_33"
+          ],
+          "after": []
+        },
+        {
+          "id": "reliance",
+          "title": {
+            "zh": "对团队的依赖意愿",
+            "en": "Willingness to rely on the team"
+          },
+          "before": [
+            {
+              "zh": "请分别考虑两个游戏版本中的实验室团队，再比较哪一局更符合你的依赖意愿，不需要现实中真的作出过这些选择。",
+              "en": "Consider the lab team in each version separately, then compare which game better describes your willingness to rely on that team. You do not need to have actually made these choices in real life."
+            }
+          ],
+          "itemIds": [
+            "P04_34",
+            "P04_35",
+            "P04_36"
+          ],
+          "after": []
+        },
+        {
+          "id": "feelings",
+          "title": {
+            "zh": "整体感受",
+            "en": "Overall feelings"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_37",
+            "P04_38"
+          ],
+          "after": []
+        },
+        {
+          "id": "other_experience",
+          "title": {
+            "zh": "其他体验反馈",
+            "en": "Other feedback on the experience"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_39",
+            "P04_40"
+          ],
+          "after": [
+            {
+              "zh": "第38至40题描述不适、等待干扰与迎合感。选择更符合哪一局，表示这些情况在那一局更多。",
+              "en": "Questions 38–40 describe discomfort, waiting interference, and perceived accommodation. Selecting one game means that these experiences were more present in that game."
+            }
+          ]
+        },
+        {
+          "id": "preference",
+          "title": {
+            "zh": "整体选择与可选开放回答",
+            "en": "Overall choice and optional open-ended answers"
+          },
+          "before": [],
+          "itemIds": [
+            "P04_41"
+          ],
+          "after": []
+        },
+        {
+          "id": "open_change",
+          "title": {
+            "zh": "",
+            "en": ""
+          },
+          "before": [],
+          "itemIds": [
+            "P04_42"
+          ],
+          "after": [
+            {
+              "zh": "可以注明角色和具体情节。若两局都未注意到变化或差异，可以直接说明；只有一局出现变化时，也可以如实描述。",
+              "en": "You may name a character or describe a specific scene. If you did not notice changes or differences in either game, you may say so. You may also describe change that occurred in only one game."
+            }
+          ]
+        },
+        {
+          "id": "open_application",
+          "title": {
+            "zh": "",
+            "en": ""
+          },
+          "before": [],
+          "itemIds": [
+            "P04_43"
+          ],
+          "after": [
+            {
+              "zh": "可以注明主要来自 A、B、两局共同的体验或已有经验。若没有想到可用的方法，可以填写“没有想到”。这里不要求你已经在现实中使用过。",
+              "en": "You may indicate whether it mainly came from A, B, both games, or prior experience. If no approach comes to mind, you may say so. You do not need to have used it in real life."
+            }
+          ]
+        },
+        {
+          "id": "open_experience",
+          "title": {
+            "zh": "",
+            "en": ""
+          },
+          "before": [],
+          "itemIds": [
+            "P04_44"
+          ],
+          "after": [
+            {
+              "zh": "请注明发生在 A 还是 B。可以是积极或消极的影响，也可以解释为什么两局差不多或为什么两局都不想继续。请勿填写真实姓名、联系方式或其他个人身份信息。",
+              "en": "Please indicate whether it occurred in A or B. You may describe a positive or negative impact, or explain why the games felt similar or why you would not want to continue either. Please do not include your real name, contact details, or other personally identifying information."
+            }
+          ]
+        }
+      ],
+      "itemIds": [
+        "P04_1",
+        "P04_2",
+        "P04_3",
+        "P04_4",
+        "P04_5",
+        "P04_6",
+        "P04_7",
+        "P04_8",
+        "P04_9",
+        "P04_10",
+        "P04_11",
+        "P04_12",
+        "P04_13",
+        "P04_14",
+        "P04_15",
+        "P04_16",
+        "P04_17",
+        "P04_18",
+        "P04_19",
+        "P04_20",
+        "P04_21",
+        "P04_22",
+        "P04_23",
+        "P04_24",
+        "P04_25",
+        "P04_26",
+        "P04_27",
+        "P04_28",
+        "P04_29",
+        "P04_30",
+        "P04_31",
+        "P04_32",
+        "P04_33",
+        "P04_34",
+        "P04_35",
+        "P04_36",
+        "P04_37",
+        "P04_38",
+        "P04_39",
+        "P04_40",
+        "P04_41",
+        "P04_42",
+        "P04_43",
+        "P04_44"
+      ],
+      "collection": "enabled",
+      "outro": [
+        {
+          "zh": "感谢你的反馈。",
+          "en": "Thank you for your feedback."
+        }
+      ]
+    },
+    "per_game": {
+      "id": "per_game",
+      "title": {
+        "zh": "附录一 单局人物真实感简表",
+        "en": "Appendix 1 Brief Per-game Character Authenticity Ratings"
+      },
+      "intro": [
+        {
+          "zh": "每局结束后立即填写一份：第一局后填一次，第二局后再填一次。只评价刚完成的这一局，填写后再继续后续任务。",
+          "en": "Complete a separate copy immediately after each game: once after the first game and again after the second. Rate only the game you have just completed, then continue to the next task."
+        },
+        {
+          "zh": "这里使用单局同意度选项：1 非常不同意；2 不同意；3 中立；4 同意；5 非常同意。另可选“不适用”或“无法判断”。每题选一个答案；允许跳过。",
+          "en": "Use agreement options here: 1 Strongly disagree; 2 Disagree; 3 Neither agree nor disagree; 4 Agree; 5 Strongly agree. “Not applicable” and “Unable to judge” are also available. Select one response per statement. You may skip questions."
+        }
+      ],
+      "sections": [
+        {
+          "id": "per_game_ratings",
+          "title": {
+            "zh": "",
+            "en": ""
+          },
+          "before": [],
+          "itemIds": [
+            "P04_A1",
+            "P04_A2",
+            "P04_A3",
+            "P04_A4"
+          ],
+          "after": []
+        }
+      ],
+      "itemIds": [
+        "P04_A1",
+        "P04_A2",
+        "P04_A3",
+        "P04_A4"
+      ],
+      "collection": "enabled",
+      "contextPrompt": {
+        "zh": "本次评估：☐ 游戏 A（第一局）　☐ 游戏 B（第二局）",
+        "en": "Game being rated: ☐ Game A (first game)　☐ Game B (second game)"
+      }
+    },
+    "transfer_X": {
+      "id": "transfer_X",
+      "title": {
+        "zh": "附录二 新情境作答表 X",
+        "en": "Appendix 2 New Situation Response Form X"
+      },
+      "intro": [
+        {
+          "zh": "研究者按分配在游戏前或第一局后的测量阶段发放本表。请先完成情境作答，再填写附录四的信心短表。不要提前阅读另一套情境或接收正确答案。",
+          "en": "The researcher will provide this form either before the games or during assessment after the first game, according to the assigned schedule. Complete the situation responses before the confidence ratings in Appendix 4. Do not read the other form in advance or receive model answers."
+        },
+        {
+          "zh": "下面两个情境相互独立。请依据情境本身说明你会怎样做，采用你认为合适的方式即可。每段回复可以简短，不要求使用特定术语。请勿填写现实中的个人身份信息。",
+          "en": "The two situations below are independent. Respond based on each situation, using an approach you consider appropriate. Responses may be brief; no particular terminology is required. Do not include personally identifying information from real life."
+        }
+      ],
+      "sections": [
+        {
+          "id": "X1",
+          "title": {
+            "zh": "情境 X1",
+            "en": "Situation X1"
+          },
+          "before": [
+            {
+              "zh": "你刚加入一个校园公益活动小组，接手核查最终收支表。原表由另一位成员制作。你发现两笔支出缺少凭证，现有材料还不能判断原因。负责提交的成员希望你确认整张表无误。",
+              "en": "You have just joined a campus charity event team and taken over checking the final income and expense table. Another member prepared the original table. You find that two expenses have no supporting documents, and the available information does not explain why. The member responsible for submitting the table asks you to confirm that the entire table is correct."
+            }
+          ],
+          "itemIds": [
+            "P04_X1a",
+            "P04_X1b"
+          ],
+          "after": []
+        },
+        {
+          "id": "X2",
+          "title": {
+            "zh": "情境 X2",
+            "en": "Situation X2"
+          },
+          "before": [
+            {
+              "zh": "你参加一个校园活动筹备小组。另一位成员制作了原始海报，你负责核对信息并重写了介绍文字。最终海报的贡献说明只记录了原始海报制作成员。负责人手中有双方的分工记录，尚未征求你的意见。",
+              "en": "You are helping to organise a campus event. Another member created the original poster, and you checked the information and rewrote the descriptive text. The final poster's contribution statement credits only the member who created the original poster. The organiser has a record of both members' responsibilities and has not yet asked for your opinion."
+            }
+          ],
+          "itemIds": [
+            "P04_X2a",
+            "P04_X2b"
+          ],
+          "after": []
+        }
+      ],
+      "itemIds": [
+        "P04_X1a",
+        "P04_X1b",
+        "P04_X2a",
+        "P04_X2b"
+      ],
+      "collection": "enabled",
+      "contextPrompt": {
+        "zh": "本次填写时点：☐ 游戏开始前　☐ 第一局结束后",
+        "en": "Assessment time: ☐ Before either game　☐ After the first game"
+      }
+    },
+    "transfer_Y": {
+      "id": "transfer_Y",
+      "title": {
+        "zh": "附录三 新情境作答表 Y",
+        "en": "Appendix 3 New Situation Response Form Y"
+      },
+      "intro": [
+        {
+          "zh": "本表与 X 表分别用于前后两个测量时点。研究者负责安排 X→Y 或 Y→X；每个时点只发一套。请先完成情境作答，再填写附录四的信心短表。",
+          "en": "Forms X and Y are used at different assessment times. The researcher assigns either X then Y or Y then X; provide only one form at each assessment. Complete the situation responses before the confidence ratings in Appendix 4."
+        },
+        {
+          "zh": "下面两个情境相互独立。请根据实际给出的信息回答，不需要猜测材料中没有说明的事实。",
+          "en": "The two situations below are independent. Answer using the information given; you do not need to guess facts that are not provided."
+        }
+      ],
+      "sections": [
+        {
+          "id": "Y1",
+          "title": {
+            "zh": "情境 Y1",
+            "en": "Situation Y1"
+          },
+          "before": [
+            {
+              "zh": "你刚加入一个社区运动会筹备小组，接手核对物资清单。原清单由另一位成员制作。你发现两项数量与仓库记录不一致，现有材料还不能判断原因。负责对外汇报的成员希望你确认整张清单无误。",
+              "en": "You have just joined a team organising a community sports event and taken over checking the supply list. Another member prepared the original list. You find that two quantities do not match the warehouse records, and the available information does not explain why. The member responsible for reporting outside the team asks you to confirm that the entire list is correct."
+            }
+          ],
+          "itemIds": [
+            "P04_Y1a",
+            "P04_Y1b"
+          ],
+          "after": []
+        },
+        {
+          "id": "Y2",
+          "title": {
+            "zh": "情境 Y2",
+            "en": "Situation Y2"
+          },
+          "before": [
+            {
+              "zh": "你参加一个社区读书活动筹备小组。另一位成员提供了原始材料，你负责核对资料并重写了介绍。最终宣传册的贡献说明只记录了原始材料提供者。负责人手中有双方的分工记录，尚未征求你的意见。",
+              "en": "You are helping to organise a community reading event. Another member provided the original materials, and you checked the information and rewrote the introduction. The final booklet's contribution statement credits only the member who provided the original materials. The organiser has a record of both members' responsibilities and has not yet asked for your opinion."
+            }
+          ],
+          "itemIds": [
+            "P04_Y2a",
+            "P04_Y2b"
+          ],
+          "after": []
+        }
+      ],
+      "itemIds": [
+        "P04_Y1a",
+        "P04_Y1b",
+        "P04_Y2a",
+        "P04_Y2b"
+      ],
+      "collection": "enabled",
+      "contextPrompt": {
+        "zh": "本次填写时点：☐ 游戏开始前　☐ 第一局结束后",
+        "en": "Assessment time: ☐ Before either game　☐ After the first game"
+      }
+    },
+    "confidence": {
+      "id": "confidence",
+      "title": {
+        "zh": "附录四 应用信心短表",
+        "en": "Appendix 4 Confidence in Applying Approaches"
+      },
+      "intro": [
+        {
+          "zh": "在游戏开始前、第一局结束后的新情境作答完成后，分别填写一次。请评价你此时的信心。",
+          "en": "Complete this form before either game and again after completing the new situation responses following the first game. Rate your confidence at the time of answering."
+        },
+        {
+          "zh": "选项：1 非常不同意；2 不同意；3 中立；4 同意；5 非常同意。另可选“不适用”或“无法判断”；允许跳过。",
+          "en": "Options: 1 Strongly disagree; 2 Disagree; 3 Neither agree nor disagree; 4 Agree; 5 Strongly agree. “Not applicable” and “Unable to judge” are also available. You may skip questions."
+        }
+      ],
+      "sections": [
+        {
+          "id": "confidence_ratings",
+          "title": {
+            "zh": "",
+            "en": ""
+          },
+          "before": [],
+          "itemIds": [
+            "P04_C1",
+            "P04_C2",
+            "P04_C3"
+          ],
+          "after": []
+        }
+      ],
+      "itemIds": [
+        "P04_C1",
+        "P04_C2",
+        "P04_C3"
+      ],
+      "collection": "enabled",
+      "contextPrompt": {
+        "zh": "本次填写时点：☐ 游戏开始前　☐ 第一局结束后",
+        "en": "Assessment time: ☐ Before either game　☐ After the first game"
+      }
+    }
+  },
+  "schedulePreview": {
+    "title": {
+      "zh": "分段填写安排",
+      "en": "When to Complete Each Section"
+    },
+    "intro": [
+      {
+        "zh": "本文件包含两局结束后的完整对比问卷，以及按不同时间填写的附录。请由研究者按以下顺序发放相应页面，不提前展示后测情境。",
+        "en": "This document contains the final comparison questionnaire and appendices completed at different times. The researcher should provide the relevant pages in the following order and keep later assessment situations out of view until their scheduled time."
+      }
+    ],
+    "steps": [
+      {
+        "zh": "1. 游戏开始前：填写附录二或三中的一套新情境表，再填写附录四。",
+        "en": "1. Before either game: complete one response form from Appendix 2 or 3, then Appendix 4."
+      },
+      {
+        "zh": "2. 第一局结束后：填写附录一，再填写另一套新情境表和附录四。",
+        "en": "2. After the first game: complete Appendix 1, then the other response form and Appendix 4."
+      },
+      {
+        "zh": "3. 第二局结束后：再次填写附录一。",
+        "en": "3. After the second game: complete Appendix 1 again."
+      },
+      {
+        "zh": "4. 两局均结束后：填写下面第一、第二、第三部分及整体反馈。",
+        "en": "4. After both games: complete Parts 1, 2, and 3 below and the overall feedback."
+      }
+    ],
+    "notes": [
+      {
+        "zh": "附录中的 X／Y 是评估表名称，A／B 是先后两局游戏名称，两者不同。每个前后测时点只发一套情境表，不需要同一时点把 X 和 Y 都答一遍。",
+        "en": "X and Y are assessment forms; A and B are the first and second games. They are different labels. Provide only one situation form at each pre/post assessment, not both forms at the same time."
+      }
+    ]
+  }
+}

@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialEvoNPC Game</title>
+    <link rel="stylesheet" href="./styles.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./kenney-public-assets.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./kenney-dialogue-ui.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./galgame-dialogue.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./kenney-status-interaction.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./kenney-ui-icons.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./kenney-animation-effects.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./player-experience.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./lab-art.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./shell-ui.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./agent-waiting.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./src/project-outcome.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./src/credit-workflow.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./project-workflow.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./study-pair.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./src/study-account.css?v=anonymous-release" />
+    <link rel="stylesheet" href="./study-questionnaire.css?v=anonymous-release" />
+  </head>
+  <body class="lab-entry-shell">
+    <main id="app" class="app-shell">
+      <section id="menu-screen" class="screen screen-active">
+        <img class="title-key-art" src="./assets/title-screen/lab-entry-cover-v2.png" alt="" aria-hidden="true" fetchpriority="high">
+        <div class="title-shade" aria-hidden="true"></div>
+        <header class="title-topline"><span class="title-studio">SOCIALEVO<span>NPC</span></span>
+          <div class="language-control"><label for="language-select" data-i18n="languageLabel">Language</label><select id="language-select"><option value="en">English</option><option value="zh">中文</option></select></div>
+        </header>
+        <div class="menu-layout"><div class="menu-copy">
+          <p class="eyebrow" data-i18n="menuEyebrow">An interactive story of work and relationships</p>
+          <h1 data-i18n="menuTitle">Lab Entry</h1><p class="title-subtitle">LAB ENTRY</p>
+          <p class="lead" data-i18n="menuLead">An unfamiliar lab. Different points of view. Start with a conversation. Decide what comes next.</p>
+          <nav class="menu-actions" aria-label="Main menu">
+            <button id="start-config-btn" class="primary-btn title-action" type="button"><span class="title-action-index" aria-hidden="true">01</span><span data-i18n="startGame">Begin the story</span><span class="title-action-arrow" aria-hidden="true">→</span></button>
+            <button id="about-btn" class="secondary-btn title-action" type="button"><span class="title-action-index" aria-hidden="true">02</span><span data-i18n="projectNotes">How to play</span><span class="title-action-arrow" aria-hidden="true">→</span></button>
+            <button id="menu-options-btn" class="secondary-btn title-action" type="button"><span class="title-action-index" aria-hidden="true">03</span><span data-i18n="shellOptions">Options</span><span class="title-action-arrow" aria-hidden="true">→</span></button>
+          </nav>
+          <p class="title-reassurance" data-i18n="shellReassurance">Use your own words. You do not need to guess a right answer.</p>
+          <p id="brief-required-note" class="brief-required-note" data-i18n="briefRequired">Read the introduction before starting.</p>
+        </div></div>
+        <footer class="title-footer"><span data-i18n="shellTitleControls">↑ ↓ Select · Enter Confirm · Or use your mouse</span><span>01 <span class="title-footer-line" aria-hidden="true"></span> LAB ENTRY</span></footer>
+      </section>
+
+      <section id="game-select-screen" class="screen">
+        <header class="topbar game-library-topbar">
+          <button id="back-main-menu-btn" class="icon-btn" aria-label="Back to main menu" data-i18n="back">Back</button>
+          <div class="game-library-title">
+            <p class="eyebrow" data-i18n="gameLibraryEyebrow">Scenario game library</p>
+            <h2 data-i18n="gameLibraryTitle">Choose a SocialEvoNPC Game</h2>
+          </div>
+        </header>
+
+        <div class="game-library-grid">
+          <button id="select-newcomer-game-btn" class="game-card game-card-active" type="button">
+            <div class="game-card-preview" aria-hidden="true">
+              <div class="mini-room">
+                <span class="mini-board"></span>
+                <span class="mini-table"></span>
+                <span class="mini-person mini-a"></span>
+                <span class="mini-person mini-b"></span>
+                <span class="mini-person mini-c"></span>
+                <span class="mini-person mini-d"></span>
+              </div>
+            </div>
+            <div class="game-card-copy">
+              <p class="eyebrow" data-i18n="gameOneEyebrow">Game 1</p>
+              <h3 data-i18n="gameOneTitle">Lab Entry</h3>
+              <p data-i18n="gameOneDescription">You are temporarily transferred into an unfamiliar research lab with pressure, hierarchy, project risk, and mixed reactions to your arrival.</p>
+              <span data-i18n="configureGame">Configure NPC agents</span>
+            </div>
+          </button>
+
+          <button id="select-peer-support-game-btn" class="game-card legacy-game-card" type="button" hidden aria-hidden="true">
+            <div class="game-card-preview" aria-hidden="true">
+              <div class="mini-room mini-room-peer">
+                <span class="mini-board mini-support-board"></span>
+                <span class="mini-table mini-round-table"></span>
+                <span class="mini-tool mini-tablet-tool"></span>
+                <span class="mini-card mini-boundary-card"></span>
+                <span class="mini-person mini-a"></span>
+                <span class="mini-person mini-b"></span>
+                <span class="mini-person mini-c"></span>
+                <span class="mini-person mini-d"></span>
+              </div>
+            </div>
+            <div class="game-card-copy">
+              <p class="eyebrow" data-i18n="gameTwoEyebrow">Game 2</p>
+              <h3 data-i18n="gameTwoTitle">Hidden legacy scenario</h3>
+              <p data-i18n="gameTwoDescription">This scenario is retained only as legacy data and is not playable in the current build.</p>
+              <span data-i18n="configureGame">Configure NPC agents</span>
+            </div>
+          </button>
+
+          <button id="select-community-volunteer-game-btn" class="game-card legacy-game-card" type="button" hidden aria-hidden="true">
+            <div class="game-card-preview" aria-hidden="true">
+              <div class="mini-room mini-room-community">
+                <span class="mini-board mini-map-board"></span>
+                <span class="mini-table mini-supply-table"></span>
+                <span class="mini-tool mini-clipboard-tool"></span>
+                <span class="mini-crate mini-crate-a"></span>
+                <span class="mini-crate mini-crate-b"></span>
+                <span class="mini-person mini-a"></span>
+                <span class="mini-person mini-b"></span>
+                <span class="mini-person mini-c"></span>
+                <span class="mini-person mini-d"></span>
+              </div>
+            </div>
+            <div class="game-card-copy">
+              <p class="eyebrow" data-i18n="gameThreeEyebrow">Game 3</p>
+              <h3 data-i18n="gameThreeTitle">Hidden legacy scenario</h3>
+              <p data-i18n="gameThreeDescription">This scenario is retained only as legacy data and is not playable in the current build.</p>
+              <span data-i18n="configureGame">Configure NPC agents</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <section id="config-screen" class="screen">
+        <header class="topbar">
+          <button id="back-menu-btn" class="icon-btn" aria-label="Back to menu" data-i18n="back">Back</button>
+          <div>
+            <p class="eyebrow" data-i18n="scenarioPreset">Scenario preset</p>
+            <h2 data-i18n="scenarioTitle">Lab Entry</h2>
+          </div>
+        </header>
+
+        <div class="config-grid">
+          <section class="panel config-intro-panel">
+            <p class="eyebrow" data-i18n="shellSetupEyebrow">Before your first conversation</p><h3 data-i18n="shellSetupTitle">Step into the lab, at your own pace.</h3>
+            <p data-i18n="scenarioDescription">
+              Your original research group stopped taking new students, so the
+              department temporarily placed you in an unfamiliar lab. The lab
+              already has pressure, hierarchy, old project problems, and mixed
+              feelings about your arrival.
+            </p>
+            <details class="setup-story-details" open><summary data-i18n="shellStoryDetails">Your role and goal</summary><dl class="scenario-facts">
+              <div>
+                <dt data-i18n="finalGoal">Final goal</dt>
+                <dd data-i18n="finalGoalText">Reach a workable project plan while preserving a healthy group climate.</dd>
+              </div>
+              <div>
+                <dt data-i18n="playerRole">Player role</dt>
+                <dd data-i18n="playerRoleText">Newcomer and key decision-maker at several social moments.</dd>
+              </div>
+            </dl></details>
+            <div class="setup-stage-note"><div><strong data-i18n="shellFourStages">Start with a conversation.</strong><p data-i18n="shellNoRush">No need to rush or exhaust every topic.</p></div></div><div id="setup-member-peek" class="setup-member-peek" aria-label="Lab members"></div>
+          </section>
+
+          <section class="panel participant-setup-panel">
+            <section id="study-pair-status" class="study-pair-notice" hidden aria-live="polite">
+              <h3 id="study-pair-heading">Two game sessions</h3>
+              <p id="study-pair-description"></p>
+              <button id="study-pair-resume-btn" class="primary-btn full-width" type="button" hidden>Continue</button>
+              <button id="study-pair-load-retry-btn" class="secondary-btn full-width" type="button" hidden>Retry</button>
+            </section>
+            <p class="eyebrow" data-i18n="shellSessionSetup">This session</p><h3 data-i18n="shellReadyTitle">Ready to begin?</h3>
+            <div class="participant-field">
+              <label for="participant-id" data-i18n="participantIdLabel">Participant ID</label>
+              <input id="participant-id" type="text" autocomplete="off" aria-required="true" aria-describedby="participant-id-hint participant-warning" data-i18n-placeholder="participantIdPlaceholder" />
+              <p id="participant-id-hint" class="setup-id-hint" data-i18n="shellIdHint">Use your assigned code, not your real name.</p>
+              <p id="participant-warning" class="participant-warning" aria-live="polite"></p>
+            </div>
+            <div id="voice-modality-field" class="voice-modality-field">
+              <label for="voice-modality-enabled" data-i18n="voiceModeHeading">Optional NPC voice</label>
+              <p class="muted" data-i18n="voiceModeDescription">
+                Optional. Read validated NPC dialogue aloud with fixed OpenAI voices.
+              </p>
+              <label class="checkbox-row">
+                <input id="voice-modality-enabled" type="checkbox" role="switch" aria-describedby="voice-modality-note" />
+                <span data-i18n="voiceModeEnable">Play NPC dialogue voice</span>
+              </label>
+              <p id="voice-modality-note" class="mode-description"></p>
+            </div>
+            <label class="setup-preference-row"><span><strong data-i18n="shellLargeText">Larger text</strong><small data-i18n="shellLargeHint">Make dialogue and choices easier to read</small></span><input type="checkbox" data-shell-preference="large" role="switch"></label>
+            <details id="setup-more-preferences" class="setup-more-preferences"><summary data-i18n="shellMorePreferences">More preferences and permissions</summary>
+              <label class="setup-preference-row"><span data-i18n="shellReduceMotion">Reduce motion</span><input type="checkbox" data-shell-preference="motion" role="switch"></label>
+            <div id="video-modality-field" class="video-modality-field">
+              <label for="video-modality-enabled" data-i18n="videoModeHeading">Video modality</label>
+              <p class="muted" data-i18n="videoModeDescription">
+                Optional. Use visible facial expression cues as weak context for conversation pacing.
+              </p>
+              <label class="checkbox-row">
+                <input id="video-modality-enabled" type="checkbox" />
+                <span data-i18n="videoModeEnable">Use visible facial expression cues</span>
+              </label>
+              <label class="video-sample-row" for="video-sample-interval">
+                <span data-i18n="videoSampleRate">Sampling interval</span>
+                <select id="video-sample-interval">
+                  <option value="500" data-i18n="videoRate500">0.5s</option>
+                  <option value="700" selected data-i18n="videoRate700">0.7s</option>
+                  <option value="1000" data-i18n="videoRate1000">1.0s</option>
+                </select>
+              </label>
+              <p id="video-modality-note" class="mode-description"></p>
+            </div>
+            </details>
+            <button id="setup-how-to-play-btn" class="setup-brief-link" type="button" data-i18n="shellHowToPlay">Read the game goal and controls</button>
+            <button id="setup-review-brief-btn" class="setup-brief-link" type="button" data-i18n="shellParticipationInfo">Participation and privacy information</button>
+            
+            
+            <div id="game-mode-field" class="evolution-mode-field">
+              <label for="evolution-mode" data-i18n="gameModeLabel">NPC memory and evolution</label>
+              <select id="evolution-mode" aria-describedby="evolution-mode-description"></select>
+              <p id="evolution-mode-description" class="mode-description"></p>
+            </div>
+            <button id="begin-game-btn" class="primary-btn full-width" data-i18n="shellEnterLab">Enter the lab</button>
+          </section>
+        </div>
+      </section>
+
+      <section id="game-screen" class="screen">
+        <header class="game-header">
+          <div>
+            <p id="round-label" class="eyebrow">Stage 1 / 4</p>
+            <h2 id="game-title" data-i18n="scenarioTitle">Lab Entry</h2>
+          </div>
+          <section class="goal-strip" aria-live="polite">
+            <p class="eyebrow" data-i18n="goalHeader">Session goal</p>
+            <strong data-i18n="gameGoalText">Help the group form a workable project plan while joining the team in a healthy way.</strong>
+            <span id="current-objective" data-i18n="initialObjective">Talk with NPCs, understand their concerns, and decide how you can contribute.</span>
+          </section>
+          <div class="game-actions">
+            <div id="voice-status" class="video-status video-status-hidden" aria-live="polite"></div>
+            <div id="video-status" class="video-status video-status-hidden" aria-live="polite"></div>
+            
+            
+          </div>
+        </header>
+
+        <div class="game-layout">
+          <aside class="npc-rail" id="npc-rail"></aside>
+
+          <section class="stage">
+            <div id="pixel-world" class="pixel-world" tabindex="0" aria-label="Pixel study room. Use WASD or arrow keys to move.">
+              <div class="room-shell" aria-hidden="true">
+                <div class="room-floor"></div>
+                <div class="room-wall room-wall-top"></div>
+                <div class="room-wall room-wall-left"></div>
+                <div class="room-wall room-wall-right"></div>
+                <div class="room-wall room-wall-bottom"></div>
+                <div class="room-trim room-trim-top"></div>
+                <div class="room-trim room-trim-bottom"></div>
+                <div class="room-window room-window-left"></div>
+                <div class="room-window room-window-right"></div>
+                <div class="room-door"></div>
+              </div>
+              <div class="pixel-table" aria-hidden="true">
+                <div class="table-prop table-notebook"></div>
+                <div class="table-prop table-book"></div>
+              </div>
+              <div class="room-props" aria-hidden="true">
+                <div class="room-task-board"></div>
+                <div class="room-chair chair-top-left"></div>
+                <div class="room-chair chair-top-right"></div>
+                <div class="room-chair chair-bottom-left"></div>
+                <div class="room-chair chair-bottom-right"></div>
+                <div class="room-plant plant-right"></div>
+              </div>
+              <div id="dialogue-pacing-controls" class="dialogue-pacing-controls" role="group">
+                <label class="dialogue-auto-control" for="dialogue-auto-toggle">
+                  <span data-i18n="dialogueAuto">Auto</span>
+                  <input id="dialogue-auto-toggle" type="checkbox" checked />
+                  <span class="dialogue-auto-switch" aria-hidden="true"></span>
+                </label>
+              </div>
+              <div id="agent-waiting" role="status" aria-live="polite" aria-atomic="true" hidden>
+                <img class="agent-waiting-portrait" alt="" hidden />
+                <span class="agent-waiting-paper" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="agent-waiting-label"></span>
+                <span class="agent-waiting-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </div>
+              <section id="galgame-dialogue-layer" class="galgame-dialogue-layer galgame-dialogue-hidden" aria-live="polite" aria-atomic="true" aria-hidden="true">
+                <img id="galgame-player-portrait" class="galgame-portrait galgame-player-portrait" alt="" aria-hidden="true" draggable="false" />
+                <img id="galgame-npc-portrait" class="galgame-portrait galgame-npc-portrait" alt="" aria-hidden="true" draggable="false" />
+                <div class="galgame-readability-scrim" aria-hidden="true"></div>
+                <div class="galgame-dialogue-copy">
+                  <p id="galgame-speaker-name" class="galgame-speaker-name"></p>
+                  <div id="galgame-voice-status" class="galgame-voice-status" hidden>
+                    <span id="galgame-voice-status-text" role="status"></span>
+                    <button id="copy-voice-diagnostics" type="button" data-i18n="copyVoiceDiagnostics">Copy voice diagnostics</button>
+                  </div>
+                  <p id="galgame-dialogue-text" class="galgame-dialogue-text"></p>
+                  <span class="galgame-advance-indicator" aria-hidden="true"></span>
+                </div>
+              </section>
+              <div id="world-bubble" class="world-bubble world-bubble-hidden"></div>
+              <div id="sprite-layer" class="sprite-layer"></div>
+              <div id="expression-dock" class="expression-dock"></div>
+              <div id="proximity-hint" class="proximity-hint proximity-hint-hidden"></div>
+              <section id="side-talk-panel" class="side-talk-panel panel-hidden">
+                <div class="side-talk-header">
+                  <div>
+                    <p class="eyebrow" data-i18n="privateCheckIn">Private check-in</p>
+                    <h3 id="side-talk-title">Talk with NPC</h3>
+                  </div>
+                  <button id="close-side-talk-btn" class="icon-btn" aria-label="Close private check-in" data-i18n="close">Close</button>
+                </div>
+                <div id="side-talk-options" class="side-talk-options"></div>
+                <label class="free-response-label" for="side-talk-input">
+                  <span data-i18n="optionalMessage">Optional free-text message</span>
+                </label>
+                <textarea id="side-talk-input" rows="2" placeholder="Keep it respectful, non-sensitive, and related to the group task."></textarea>
+                <p id="safety-warning" class="safety-warning"></p>
+                <button id="submit-side-talk-btn" class="primary-btn full-width" data-i18n="sendPrivate">Send Private Message</button>
+              </section>
+              <section id="decision-panel" class="decision-panel world-decision-panel">
+                <p id="decision-type" class="eyebrow"></p>
+                <h3 id="decision-question"></h3>
+                <div id="decision-options" class="decision-options"></div>
+                <label class="free-response-label" for="free-response">
+                  <span data-i18n="optionalDecision">Optional free-text decision</span>
+                </label>
+                <textarea id="free-response" rows="2" placeholder="Type your own decision, or choose an option above."></textarea>
+                <button id="submit-decision-btn" class="primary-btn full-width" data-i18n="submitDecision">Submit Decision</button>
+              </section>
+              <section id="task-board-panel" class="task-board-panel panel-hidden">
+                <div class="side-talk-header">
+                  <div>
+                    <p class="eyebrow" data-i18n="taskBoardEyebrow">Project board</p>
+                    <h3 data-i18n="taskBoardTitle">Team task board</h3>
+                  </div>
+                  <button id="close-task-board-btn" class="icon-btn" aria-label="Close task board" data-i18n="close">Close</button>
+                </div>
+                <p id="task-board-guidance" class="muted"></p>
+                <div id="task-board-world-list" class="task-board-list"></div>
+              </section>
+              <section id="backpack-panel" class="backpack-panel panel-hidden">
+                <div class="side-talk-header">
+                  <div>
+                    <p class="eyebrow" data-i18n="backpackEyebrow">Laptop</p>
+                    <h3 data-i18n="backpackTitle">Laptop workspace</h3>
+                  </div>
+                  <button id="close-backpack-btn" class="icon-btn" aria-label="Close laptop workspace" data-i18n="close">Close</button>
+                </div>
+                <article class="inventory-tool">
+                  <span class="inventory-tool-icon workspace-tool-icon workspace-laptop" aria-hidden="true"></span>
+                  <div>
+                    <strong data-i18n="laptopToolTitle">Laptop</strong>
+                    <p data-i18n="laptopToolBody">Draft a small project artifact for the current task.</p>
+                  </div>
+                </article>
+                <p id="backpack-guidance" class="muted"></p>
+                <section id="workspace-documents" class="workspace-documents" aria-label="Project files"></section>
+                <div id="artifact-task-summary" class="artifact-task-summary"></div>
+                <p id="artifact-option-label" class="free-response-label" data-i18n="artifactOptionLabel">Choose how to complete it</p>
+                <div id="artifact-options" class="side-talk-options artifact-options"></div>
+                <label id="artifact-note-label" class="free-response-label" for="artifact-draft-input">
+                  <span data-i18n="artifactDraftLabel">Optional note</span>
+                </label>
+                <textarea id="artifact-draft-input" rows="3" placeholder="Optional: add one sentence to clarify how you would carry this out."></textarea>
+                <p id="artifact-warning" class="safety-warning"></p>
+                <button id="submit-artifact-btn" class="primary-btn full-width" data-i18n="submitArtifact">Submit Artifact</button>
+              </section>
+              <div class="world-help" data-i18n="openingHelp">Opening plays automatically. Move later with WASD / arrow keys.</div>
+            </div>
+            <button id="dialogue-history-toggle" class="dialogue-history-toggle" type="button" aria-expanded="false" data-i18n="dialogueHistory">
+              History
+            </button>
+            <div id="dialogue-feed" class="dialogue-feed dialogue-feed-collapsed" aria-live="polite"></div>
+          </section>
+
+          <aside class="state-panel">
+            <div class="panel compact">
+              <h3 data-i18n="gameMaster">Game Master</h3>
+              <p id="gm-note" class="muted"></p>
+            </div>
+            <div class="panel compact">
+              <h3 data-i18n="sessionState">Session State</h3>
+              <div id="session-state" class="state-list"></div>
+            </div>
+            
+            
+            
+            
+            
+            
+          </aside>
+        </div>
+      </section>
+
+      <section id="summary-screen" class="screen">
+        <header class="topbar">
+          <button id="summary-menu-btn" class="icon-btn" aria-label="Back to menu">Menu</button>
+          <div>
+            <p class="eyebrow" id="summary-ended-label">Session ended</p>
+            <h2 id="summary-page-heading">Your Lab Entry outcome</h2>
+          </div>
+        </header>
+        <section id="study-questionnaire-summary-wait" class="study-questionnaire-summary-wait"><p id="study-questionnaire-summary-wait-text" role="status"></p><button id="study-questionnaire-summary-retry" class="secondary-btn" type="button" hidden>Retry</button></section>
+        <div class="summary-grid">
+          <section id="study-pair-summary-controls" class="panel study-pair-summary-controls" hidden>
+            <h3 id="study-pair-summary-title">Game recap</h3>
+            <p id="study-pair-save-status" role="status" aria-live="polite"></p>
+            <button id="study-pair-retry-btn" class="secondary-btn full-width" type="button" hidden>Retry saving</button>
+            <button id="study-pair-continue-btn" class="primary-btn full-width" type="button" disabled>Continue</button>
+          </section>
+          <section class="panel">
+            <h3 id="summary-outcome-heading">Outcome Summary</h3>
+            <div id="outcome-summary"></div>
+          </section>
+          <section class="panel">
+            <h3 id="summary-feedback-heading">How was this session?</h3>
+            <div class="feedback-form">
+              <label for="summary-rating" data-i18n="feedbackRatingLabel">Overall experience rating</label>
+              <select id="summary-rating">
+                <option value="" data-i18n="feedbackSelectRating">Select rating</option>
+                <option value="5" data-i18n="feedbackRating5">5 - Very positive</option>
+                <option value="4" data-i18n="feedbackRating4">4 - Positive</option>
+                <option value="3" data-i18n="feedbackRating3">3 - Neutral</option>
+                <option value="2" data-i18n="feedbackRating2">2 - Negative</option>
+                <option value="1" data-i18n="feedbackRating1">1 - Very negative</option>
+              </select>
+              <label for="summary-feedback" data-i18n="feedbackLabel">Participant feedback</label>
+              <textarea id="summary-feedback" rows="5" placeholder="What felt natural, confusing, helpful, or uncomfortable?" data-i18n-placeholder="feedbackPlaceholder"></textarea>
+              <button id="submit-feedback-btn" class="secondary-btn full-width" data-i18n="submitFeedback">Submit Feedback</button>
+              <p id="feedback-status" class="feedback-status" aria-live="polite"></p>
+            </div>
+            
+          </section>
+          
+        </div>
+      </section>
+
+      <dialog id="project-info-dialog" class="project-info-dialog">
+        <div class="project-info-content">
+          <div class="shell-guide-toolbar"><button id="close-project-info-btn" class="icon-btn project-info-close" data-i18n="closeProjectInfo">Close</button></div>
+          <p class="eyebrow" data-i18n="menuEyebrow">Interactive lab story</p>
+          <h2 data-i18n="projectInfoTitle">How to play</h2>
+          <p data-i18n="projectInfoIntro"></p>
+          <div class="shell-guide-steps">
+            <section><span>01</span><div><h3 data-i18n="shellGuideStart">Your first steps</h3><p data-i18n="shellGuideStartBody">Your task is to help revise and submit the team’s competition report. Read the opening dialogue and reply when invited. Use Read the Starting scope note to inspect the project on the shared computer, then follow Current action to join the group discussion. Review the actual entry record when prompted and confirm when you are ready to begin the report review. You may explore or talk first; meeting every member is not required.</p><kbd>B</kbd></div></section>
+            <section><span>02</span><div><h3 data-i18n="shellGuideTalk">Move, read and reply</h3><p data-i18n="shellGuideTalkBody">Hold WASD or the arrow keys, or click a clear spot to move. Approach a member and press E, or click their character/name. Click Continue or press Space for the next line. When a reply is requested, select an option or write your own words, then use Confirm reply or Send. Choosing a conversation topic only fills a draft.</p><kbd>WASD / ↑ ↓ ← → · E · Space</kbd></div></section>
+            <section><span>03</span><div><h3 data-i18n="shellGuideWork">Use the shared computer</h3><p data-i18n="shellGuideWorkBody">Press B or click Shared computer. Work pack contains the starting scope, draft and anonymous scores. When the report editor is available in Current, edit its text there. Submissions contains versions you actually sent and the feedback you received. Close the computer to return to the room and continue a conversation.</p><kbd>B</kbd></div></section>
+            <section><span>04</span><div><h3 data-i18n="shellGuideSubmit">Save, review and formally submit</h3><p data-i18n="shellGuideSubmitBody">Save draft keeps your writing; it does not send it to anyone. Send this report for review sends the current text to the advisors. Read the feedback and, after further edits, send the changed version again. Formally submit this report is a separate action: use it when it becomes available and you are ready to enter the competition. A review submission is not the competition entry.</p></div></section>
+            <section><span>05</span><div><h3 data-i18n="shellGuideNotes">If you are unsure what to do next</h3><p data-i18n="shellGuideNotesBody">Check Current action at the upper left, or press J and open Current action in Notes. Follow the displayed instruction to read a document, finish a reply, review feedback or confirm a discussion. If a button is unavailable, read its nearby explanation. H reopens this guide. You can choose whom to talk to; there is no requirement to ask everyone or exhaust every topic.</p><kbd>J / H</kbd></div></section>
+            <section><span>06</span><div><h3 data-i18n="shellGuideTime">The deadline and the end of a session</h3><p data-i18n="shellGuideTimeBody">The competition deadline is the end of the seventh working day in the story; you do not wait seven real days. Conversations and work in the story advance its calendar. Time you spend reading, typing or waiting for replies is not charged separately. A new day does not complete the report for you. Keep following Current action and later confirmations until the end-of-session prompt. Then follow the page to answer or skip the short form, view the full recap and confirm before continuing.</p></div></section>
+          </div>
+          <details class="shell-guide-more"><summary data-i18n="shellMoreInfo">More about this session</summary>
+          <div class="project-info-sections">
+            <section>
+              <h3 data-i18n="projectInfoNpcTitle">What NPCs Do</h3>
+              <p data-i18n="projectInfoNpcBody"></p>
+            </section>
+            <section>
+              <h3 data-i18n="projectInfoPlayerTitle">Player Responsibility</h3>
+              <p data-i18n="projectInfoPlayerBody"></p>
+            </section>
+            <section>
+              <h3 data-i18n="projectInfoGoalTitle">Final Goal</h3>
+              <p data-i18n="projectInfoGoalBody"></p>
+            </section>
+            <section>
+              <h3 data-i18n="projectInfoStudyTitle">Research Use</h3>
+              <p data-i18n="projectInfoStudyBody"></p>
+            </section>
+          </div>
+          </details>
+        </div>
+      </dialog>
+      <dialog id="menu-options-dialog" class="project-info-dialog shell-options-dialog">
+        <div class="project-info-content"><button id="close-menu-options-btn" class="icon-btn project-info-close" type="button" data-i18n="closeProjectInfo">Close</button><p class="eyebrow">LAB ENTRY</p><h2 data-i18n="shellPlayYourWay">Play your way</h2><p data-i18n="shellPreferenceHint">Reading preferences apply to the interface only. Voice and camera permissions are selected at setup.</p>
+          <label class="setup-preference-row"><span data-i18n="shellLargeText">Larger text</span><input type="checkbox" data-shell-preference="large" role="switch"></label>
+          <label class="setup-preference-row"><span data-i18n="shellContrast">Higher reading contrast</span><input type="checkbox" data-shell-preference="contrast" role="switch"></label>
+          <label class="setup-preference-row"><span data-i18n="shellReduceMotion">Reduce motion</span><input type="checkbox" data-shell-preference="motion" role="switch"></label>
+          <label class="setup-preference-row"><span data-i18n="shellDarkReading">Dark reading panels</span><input type="checkbox" data-shell-preference="dark" role="switch"></label>
+        </div>
+      </dialog>
+      <section id="study-questionnaire-screen" class="screen study-questionnaire-screen" aria-label="Questionnaire">
+        <div id="study-questionnaire-form"></div>
+      </section>
+      <section id="study-complete-screen" class="screen">
+        <header class="topbar"><div><p class="eyebrow">A + B</p><h2 id="study-complete-title">Both games are complete</h2></div></header>
+        <section class="panel study-pair-complete"><p id="study-complete-message"></p></section>
+        <section class="panel study-questionnaire-panel" aria-labelledby="study-questionnaire-title">
+          <h3 id="study-questionnaire-title">Post-game questionnaire</h3>
+          <p id="study-questionnaire-placeholder">The questionnaire is not available yet. Follow the researcher's instructions for the next step.</p>
+        </section>
+        <section id="study-pair-keepsakes" class="study-pair-keepsakes" aria-labelledby="study-keepsake-title" hidden>
+          <header class="panel study-pair-keepsake-heading"><h3 id="study-keepsake-title">Your two game keepsakes</h3><p id="study-keepsake-message"></p>
+            <div id="study-keepsake-tabs" class="study-keepsake-tabs" role="group" aria-label="Choose a game recap"><button id="study-keepsake-a" class="secondary-btn" type="button" aria-pressed="true">Game A</button><button id="study-keepsake-b" class="secondary-btn" type="button" aria-pressed="false">Game B</button></div>
+            <p id="study-keepsake-status" role="status"></p><button id="study-keepsake-reload" class="secondary-btn" type="button">Reload saved keepsakes</button>
+          </header>
+          <section id="study-pair-keepsake-panel" class="panel lab-recap-panel"></section>
+        </section>
+      </section>
+      <aside id="study-pair-save-banner" class="study-pair-save-banner" hidden role="status" aria-live="polite">
+        <span id="study-pair-save-banner-text"></span><button id="study-pair-game-retry-btn" class="secondary-btn" type="button" hidden>Retry saving</button>
+      </aside>
+      <dialog id="study-brief-dialog" class="project-info-dialog">
+        <div class="project-info-content">
+          <p class="eyebrow" data-i18n="briefEyebrow">Required brief</p>
+          <h2 data-i18n="briefTitle">Before You Start</h2>
+          <p data-i18n="briefIntro"></p>
+          <p id="study-pair-brief-note" class="study-pair-notice" hidden></p>
+          <div class="project-info-sections brief-sections">
+            <section>
+              <h3 data-i18n="briefRoleTitle">Your role</h3>
+              <p data-i18n="briefRoleBody"></p>
+            </section>
+            <section>
+              <h3 data-i18n="briefGoalTitle">Your goal</h3>
+              <p data-i18n="briefGoalBody"></p>
+            </section>
+            <section>
+              <h3 data-i18n="briefActionsTitle">What you can do</h3>
+              <p data-i18n="briefActionsBody"></p>
+            </section>
+            <section>
+              <h3 data-i18n="briefEndTitle">How it ends</h3>
+              <p data-i18n="briefEndBody"></p>
+            </section>
+          </div>
+          <button id="confirm-brief-btn" class="primary-btn full-width" data-i18n="briefConfirm">I understand and want to continue</button>
+        </div>
+      </dialog>
+    </main>
+
+    <script src="./src/lab-art-data.js?v=anonymous-release"></script>
+    <script src="./src/lab-pose-data.js?v=anonymous-release"></script>
+    <script src="./src/core-config.js?v=anonymous-release"></script>
+    <script src="./src/social-evo-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-narrative-core.js?v=anonymous-release"></script>
+    <script src="./src/i18n.js?v=anonymous-release"></script>
+    <script src="./src/scenario-data.js?v=anonymous-release"></script>
+    <script src="./src/app-context.js?v=anonymous-release"></script>
+    <script src="./src/app-stage-pacing.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-art.js?v=anonymous-release"></script>
+    <script src="./src/app-render.js?v=anonymous-release"></script>
+    <script src="./src/app-dialogue-memory.js?v=anonymous-release"></script>
+    <script src="./src/app-social-memory-rag.js?v=anonymous-release"></script>
+    <script src="./src/app-decision-flow.js?v=anonymous-release"></script>
+    <script src="./src/app-world-ui.js?v=anonymous-release"></script>
+    <script src="./src/app-summary.js?v=anonymous-release"></script>
+    <script src="./src/app-movement-tasks.js?v=anonymous-release"></script>
+    <script src="./src/reply-options-agent-core.js?v=anonymous-release"></script>
+    <script src="./src/dialogue-reply-choices-core.js?v=anonymous-release"></script>
+    <script src="./src/app-side-talk.js?v=anonymous-release"></script>
+    <script src="./src/app-gm-flow.js?v=anonymous-release"></script>
+    <script src="./src/app-safety-utils.js?v=anonymous-release"></script>
+    <script src="./src/app-reply-options.js?v=anonymous-release"></script>
+    <script src="./src/app-video-modality.js?v=anonymous-release"></script>
+    <script src="./src/voice-pcm-player.js?v=anonymous-release"></script>
+    <script src="./src/app-voice-modality.js?v=anonymous-release"></script>
+
+    <script src="./src/app-entry-episode.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-days.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-environment.js?v=anonymous-release"></script>
+    <script src="./src/lab-material-evidence-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-review-materials-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-cooperation-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-review-episode-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-work-episode-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-work-revision-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-project-workflow-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-project-outcome-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-credit-workflow-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-group-thread-core.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-story.js?v=anonymous-release"></script>
+    <script src="./src/app-workspace-ui.js?v=anonymous-release"></script>
+    <script src="./src/app-cooperation-workspace.js?v=anonymous-release"></script>
+    <script src="./src/app-review-materials.js?v=anonymous-release"></script>
+    <script src="./src/app-review-episode.js?v=anonymous-release"></script>
+    <script src="./src/app-work-episodes.js?v=anonymous-release"></script>
+    <script src="./src/app-work-revision.js?v=anonymous-release"></script>
+    <script src="./src/app-project-workflow.js?v=anonymous-release"></script>
+    <script src="./src/app-project-outcome.js?v=anonymous-release"></script>
+    <script src="./src/app-credit-workflow.js?v=anonymous-release"></script>
+    <script src="./src/app-npc-contact.js?v=anonymous-release"></script>
+    <script src="./src/app-player-experience.js?v=anonymous-release"></script>
+    <script src="./src/app-player-navigation.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-life.js?v=anonymous-release"></script>
+    <script src="./src/app-dialogue-continuity.js?v=anonymous-release"></script>
+    <script src="./src/app-private-conversation.js?v=anonymous-release"></script>
+    <script src="./src/app-shell-ui.js?v=anonymous-release"></script>
+    <script src="./src/lab-recap-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-playstyle-core.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-playstyle.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-recap.js?v=anonymous-release"></script>
+    <script src="./src/lab-bgm-core.js?v=anonymous-release"></script>
+    <script src="./src/app-lab-bgm.js?v=anonymous-release"></script>
+    <script src="./src/lab-social-world-core.js?v=anonymous-release"></script>
+    <script src="./src/app-social-world.js?v=anonymous-release"></script>
+    <script src="./src/lab-dialogue-qa-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-dialogue-rubric-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-written-work-qa-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-incident-qa-core.js?v=anonymous-release"></script>
+    <script src="./src/app-dialogue-grounding.js?v=anonymous-release"></script>
+    <!-- World-evidence contract, verifier and current source projection. -->
+    <script src="./src/lab-world-evidence-qa-core.js?v=anonymous-release"></script>
+    <script src="./src/app-world-evidence-qa.js?v=anonymous-release"></script>
+    <script src="./src/app-world-evidence-context.js?v=anonymous-release"></script>
+    <script src="./src/lab-artifact-scope-qa-core.js?v=anonymous-release"></script>
+    <script src="./src/lab-gm-bridge-core.js?v=anonymous-release"></script>
+    <script src="./src/agent-waiting-core.js?v=anonymous-release"></script>
+    <script src="./src/app-agent-waiting.js?v=anonymous-release"></script>
+    <script src="./src/game-recovery-core.js?v=anonymous-release"></script>
+    <script src="./src/app-game-probe-recovery.js?v=anonymous-release"></script>
+    <script src="./src/app-game-artifact-recovery.js?v=anonymous-release"></script>
+    <script src="./src/app-game-recovery.js?v=anonymous-release"></script>
+    <script src="./src/app-study-questionnaire.js?v=anonymous-release"></script>
+    <script src="./src/app-study-pair.js?v=anonymous-release"></script>
+    <script src="./src/app-cloud-save.js?v=anonymous-release"></script>
+    <script src="./src/app-cloud-save-ui.js?v=anonymous-release"></script>
+    <script src="./src/app-study-account.js?v=anonymous-release"></script>
+    <script src="./src/app-bootstrap.js?v=anonymous-release"></script>
+  </body>
+</html>

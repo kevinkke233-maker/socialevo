@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Study group room</title>
+  <desc id="desc">A calm 2D classroom with a shared table and project materials.</desc>
+  <rect width="1200" height="650" fill="#f2eadc"/>
+  <rect x="0" y="0" width="1200" height="220" fill="#dfe9e4"/>
+  <rect x="80" y="72" width="310" height="120" rx="8" fill="#ffffff" stroke="#c3beb4" stroke-width="4"/>
+  <line x1="115" y1="112" x2="355" y2="112" stroke="#7d9288" stroke-width="8" stroke-linecap="round"/>
+  <line x1="115" y1="148" x2="295" y2="148" stroke="#d3a44f" stroke-width="8" stroke-linecap="round"/>
+  <rect x="810" y="52" width="250" height="150" rx="12" fill="#ffffff" stroke="#c3beb4" stroke-width="4"/>
+  <circle cx="870" cy="112" r="26" fill="#2f6f73"/>
+  <circle cx="940" cy="112" r="26" fill="#c87941"/>
+  <circle cx="1010" cy="112" r="26" fill="#597ea8"/>
+  <path d="M0 220h1200v430H0z" fill="#f7f4ee"/>
+  <ellipse cx="600" cy="430" rx="410" ry="105" fill="#c98d58"/>
+  <ellipse cx="600" cy="408" rx="410" ry="105" fill="#e0a96b"/>
+  <rect x="258" y="408" width="684" height="38" fill="#d09155"/>
+  <circle cx="430" cy="366" r="46" fill="#6c8b55"/>
+  <rect x="402" y="406" width="58" height="86" rx="24" fill="#6c8b55"/>
+  <circle cx="570" cy="338" r="46" fill="#bf6f73"/>
+  <rect x="542" y="378" width="58" height="94" rx="24" fill="#bf6f73"/>
+  <circle cx="720" cy="358" r="46" fill="#597ea8"/>
+  <rect x="692" y="398" width="58" height="90" rx="24" fill="#597ea8"/>
+  <circle cx="850" cy="390" r="46" fill="#d9aa4e"/>
+  <rect x="822" y="430" width="58" height="86" rx="24" fill="#d9aa4e"/>
+  <rect x="500" y="382" width="170" height="72" rx="8" fill="#fffdfa" stroke="#9c744d" stroke-width="4"/>
+  <line x1="522" y1="406" x2="642" y2="406" stroke="#7d9288" stroke-width="7" stroke-linecap="round"/>
+  <line x1="522" y1="428" x2="610" y2="428" stroke="#c87941" stroke-width="7" stroke-linecap="round"/>
+  <rect x="672" y="384" width="84" height="62" rx="8" fill="#ffffff" stroke="#9c744d" stroke-width="4"/>
+  <circle cx="102" cy="554" r="44" fill="#2f6f73" opacity="0.18"/>
+  <circle cx="1088" cy="534" r="62" fill="#c87941" opacity="0.16"/>
+</svg>

@@ -1,0 +1,8 @@
+.credit-workflow-workbench{padding:16px;margin:0 0 18px;border:2px solid #769ca0;border-radius:12px;background:#f8fcfa;color:#20383b;max-width:100%;box-sizing:border-box}
+.credit-workflow-workbench h3{margin-top:0}.credit-workflow-workbench p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.55}
+.credit-entry{padding:12px;margin:12px 0;border:1px solid #b4cac5;border-radius:8px;background:white}.credit-entry label{display:block;margin:10px 0;font-weight:600}
+.credit-entry textarea,.credit-entry select{display:block;width:100%;max-width:100%;box-sizing:border-box;margin-top:6px;font:inherit;color:inherit;background:#fff;border:1px solid #849f9b;border-radius:6px;padding:8px}
+.credit-entry textarea{resize:vertical;min-height:82px}.credit-entry-positions{border-left:3px solid #b5c4a0;padding-left:10px;font-size:.9em;font-weight:400}
+.credit-workflow-actions{display:flex;flex-wrap:wrap;gap:8px}.credit-workflow-workbench button{min-height:44px;padding:8px 12px;white-space:normal;max-width:100%;font:inherit;cursor:pointer}.credit-workflow-workbench button:disabled{opacity:.55;cursor:default}
+.credit-workflow-workbench [role=status]{padding:10px;background:#e7f0e9;border-radius:6px}.credit-workflow-workbench :focus-visible{outline:3px solid #276b80;outline-offset:2px}
+@media(max-width:600px){.credit-workflow-workbench{padding:10px}.credit-entry{padding:9px}.credit-workflow-actions button{flex:1 1 100%}.credit-entry select{font-size:14px}}

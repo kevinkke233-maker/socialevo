@@ -1,0 +1,362 @@
+/*
+  Game status and interaction UI layer.
+  Source: project-authored CSS only. No external image, font, or icon assets.
+  Intended load order: after styles.css, kenney-public-assets.css, and kenney-dialogue-ui.css.
+*/
+
+:root {
+  --status-ui-ink: #242a31;
+  --status-ui-muted: #66707a;
+  --status-ui-panel: rgba(255, 253, 250, 0.95);
+  --status-ui-panel-soft: rgba(247, 244, 238, 0.94);
+  --status-ui-line: #cfc7b8;
+  --status-ui-line-strong: #5a4639;
+  --status-ui-focus: rgba(217, 170, 78, 0.52);
+  --status-ui-accent: #2f6f73;
+  --status-ui-accent-soft: #e6f1f0;
+  --status-ui-progress: #6c8b55;
+  --status-ui-care: #597ea8;
+  --status-ui-alert: #bf6f73;
+  --status-ui-shadow: 0 10px 22px rgba(34, 40, 49, 0.12);
+}
+
+.expression-dock,
+.npc-stats,
+.proximity-hint,
+.world-help,
+.state-pill,
+.research-log {
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.expression-dock {
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  gap: 7px;
+  max-width: min(456px, calc(100% - 24px));
+  pointer-events: none;
+}
+
+.expression-card {
+  position: relative;
+  min-width: 0;
+  min-height: 72px;
+  padding: 7px 8px 8px;
+  color: var(--status-ui-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), var(--status-ui-panel-soft)),
+    var(--status-ui-panel);
+  border: 2px solid var(--status-ui-line-strong);
+  border-radius: 6px;
+  box-shadow:
+    2px 2px 0 rgba(90, 70, 57, 0.22),
+    0 7px 16px rgba(34, 40, 49, 0.1);
+}
+
+.expression-card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  content: "";
+  background: var(--status-ui-care);
+  border-radius: 4px 0 0 4px;
+}
+
+.expression-card.positive::before {
+  background: var(--status-ui-progress);
+}
+
+.expression-card.concerned::before {
+  background: var(--status-ui-alert);
+}
+
+.expression-face {
+  width: 32px;
+  height: 32px;
+  margin: 0 0 5px 3px;
+  border-width: 2px;
+  border-radius: 5px;
+  box-shadow:
+    inset 0 -3px 0 rgba(34, 40, 49, 0.1),
+    0 2px 0 rgba(34, 40, 49, 0.1);
+  animation-duration: 2.4s;
+}
+
+.expression-card strong {
+  display: block;
+  min-width: 0;
+  color: var(--status-ui-ink);
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.15;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expression-card span {
+  display: block;
+  min-width: 0;
+  color: var(--status-ui-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.npc-stats {
+  gap: 7px;
+  margin-top: 11px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--status-ui-line);
+}
+
+.stat-row {
+  grid-template-columns: minmax(48px, 0.72fr) minmax(84px, 1fr) minmax(26px, auto);
+  gap: 7px;
+  color: var(--status-ui-muted);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.stat-row > span:last-child {
+  color: var(--status-ui-ink);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.meter {
+  position: relative;
+  height: 9px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(34, 40, 49, 0.06), rgba(34, 40, 49, 0.02)),
+    #e9e3d8;
+  border: 1px solid rgba(90, 70, 57, 0.18);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 2px rgba(34, 40, 49, 0.12);
+}
+
+.meter::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent calc(25% - 1px),
+    rgba(255, 253, 250, 0.62) 25%,
+    transparent calc(25% + 1px),
+    transparent calc(50% - 1px),
+    rgba(255, 253, 250, 0.62) 50%,
+    transparent calc(50% + 1px),
+    transparent calc(75% - 1px),
+    rgba(255, 253, 250, 0.62) 75%,
+    transparent calc(75% + 1px)
+  );
+  pointer-events: none;
+}
+
+.meter span {
+  min-width: 7px;
+  background:
+    linear-gradient(90deg, var(--status-ui-accent), var(--status-ui-progress));
+  border-radius: inherit;
+  transition: width 180ms ease;
+}
+
+.world-help {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 28px;
+  min-width: 210px;
+  max-width: min(360px, calc(100% - 56px));
+  padding: 7px 10px 7px 28px;
+  color: var(--status-ui-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), var(--status-ui-panel-soft)),
+    var(--status-ui-panel);
+  border: 2px solid var(--status-ui-line-strong);
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 rgba(90, 70, 57, 0.18);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+  overflow-wrap: normal;
+  white-space: normal;
+  word-break: normal;
+}
+
+.world-help::before {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  content: "";
+  background: var(--status-ui-progress);
+  border: 2px solid var(--status-ui-line-strong);
+  border-radius: 2px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+}
+
+.proximity-hint {
+  bottom: 106px;
+  width: max-content;
+  min-width: 0;
+  max-width: min(420px, calc(100% - 28px));
+  padding: 8px 12px;
+  color: var(--status-ui-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), var(--status-ui-panel-soft)),
+    var(--status-ui-panel);
+  border: 2px solid var(--status-ui-line-strong);
+  border-radius: 6px;
+  box-shadow:
+    3px 3px 0 rgba(90, 70, 57, 0.24),
+    var(--status-ui-shadow);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.proximity-hint::before {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  content: "";
+  background: var(--status-ui-accent);
+  border-radius: 999px;
+  box-shadow: 0 0 0 3px var(--status-ui-accent-soft);
+  vertical-align: 1px;
+}
+
+.state-pill {
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 10px;
+  color: var(--status-ui-ink);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 244, 238, 0.9)),
+    #ffffff;
+  border: 1px solid var(--status-ui-line);
+  border-left: 4px solid var(--status-ui-accent);
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgba(34, 40, 49, 0.05);
+}
+
+.state-pill span {
+  min-width: 0;
+  color: var(--status-ui-muted);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.state-pill strong {
+  color: var(--status-ui-ink);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.research-log {
+  gap: 7px;
+  max-height: 240px;
+  overflow: auto;
+  padding-right: 2px;
+  scrollbar-color: var(--status-ui-accent) transparent;
+}
+
+.research-log:empty::before {
+  padding: 9px 10px;
+  color: var(--status-ui-muted);
+  content: "No observations yet.";
+  background: var(--status-ui-panel-soft);
+  border: 1px dashed var(--status-ui-line);
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.log-entry {
+  padding: 8px 9px 8px 10px;
+  color: #47515c;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(207, 199, 184, 0.72);
+  border-left: 4px solid var(--status-ui-focus);
+  border-radius: 7px;
+  font-size: 12.5px;
+  line-height: 1.42;
+}
+
+.message-avatar {
+  border: 2px solid var(--status-ui-line-strong);
+  box-shadow: 2px 2px 0 rgba(90, 70, 57, 0.18);
+}
+
+.sprite-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 253, 250, 0.92);
+  background-image: var(--kenney-character-sheet);
+  background-repeat: no-repeat;
+  background-size: 1374px 915px;
+  background-position: var(--sprite-bg-x, 0) var(--sprite-bg-y, 0);
+  border-color: var(--avatar-color, var(--status-ui-line-strong));
+  border-radius: 6px;
+  image-rendering: pixelated;
+}
+
+.system-avatar {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  color: #ffffff;
+  background: var(--avatar-color, var(--status-ui-accent));
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  .expression-dock {
+    grid-template-columns: repeat(3, minmax(74px, 1fr));
+    max-width: min(300px, calc(100% - 24px));
+  }
+
+  .expression-card {
+    min-height: 68px;
+  }
+
+  .proximity-hint {
+    bottom: 96px;
+    font-size: 12px;
+  }
+
+  .world-help {
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expression-face,
+  .meter span {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "sol-luna-v1",
+  "defaultProfile": "sol_medium",
+  "profiles": {
+    "sol_low": {"model": "gpt-6.1-sol", "reasoningEffort": "low", "maxCompletionTokens": 8192},
+    "sol_medium": {"model": "gpt-6.1-sol", "reasoningEffort": "medium", "maxCompletionTokens": 8192},
+    "luna_low": {"model": "gpt-6-luna", "reasoningEffort": "low", "maxCompletionTokens": 8192},
+    "luna_none": {"model": "gpt-6-luna", "reasoningEffort": "none", "maxCompletionTokens": 8192}
+  },
+  "purposes": {
+    "decision_npc_response": "sol_low",
+    "npc_followup_response": "sol_low",
+    "private_side_talk_response": "sol_low",
+    "autonomous_npc_exchange": "sol_low",
+    "lab_story_anchor": "sol_low",
+    "workspace_plan": "sol_low",
+    "backend_readiness": "luna_none",
+    "ui_reply_options": "luna_none",
+    "global_stage_director": "sol_medium",
+    "decision_responder_controller": "luna_low",
+    "action_classification": "luna_low",
+    "gm_bridge_source_selection": "luna_low",
+    "lab_narrative_timing": "luna_low",
+    "npc_followup_options": "luna_low",
+    "side_talk_options": "luna_low",
+    "npc_dialogue_controller": "luna_low",
+    "gm_decision_trigger": "luna_low"
+  }
+}

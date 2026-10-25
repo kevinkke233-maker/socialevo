@@ -1,0 +1,38 @@
+/* Quiet in-world activity, driven by pending work rather than a fake timer. */
+#agent-waiting[hidden] { display: none !important; }
+#agent-waiting {
+  position: absolute; z-index: 38; top: 92px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 10px; max-width: min(310px, calc(100% - 28px));
+  padding: 9px 15px 9px 11px; border: 1px solid #d3ddcd; border-radius: 12px;
+  background: #fcfbf5f5; color: #355c52; box-shadow: 0 5px 18px #223d3014;
+  font-size: 13px; line-height: 1.6; pointer-events: none; box-sizing: border-box;
+}
+#agent-waiting[data-inline="true"] {
+  position: static; transform: none; max-width: 100%; margin: 6px 0 12px; flex-shrink: 0;
+  background: #eef3e9; box-shadow: none;
+}
+.agent-waiting-portrait { width: 30px; height: 34px; border-radius: 8px; object-fit: cover; object-position: 50% 12%; background: #e4eadd; flex-shrink: 0; }
+.agent-waiting-label { min-width: 0; overflow-wrap: anywhere; }
+.agent-waiting-dots { display: inline-flex; gap: 3px; align-items: center; flex-shrink: 0; }
+.agent-waiting-dots i { width: 4px; height: 4px; border-radius: 50%; background: #6e947e; animation: agent-waiting-dot 1.4s ease-in-out infinite; }
+.agent-waiting-dots i:nth-child(2) { animation-delay: .18s; }
+.agent-waiting-dots i:nth-child(3) { animation-delay: .36s; }
+.agent-waiting-paper { display: none; width: 20px; height: 24px; border: 1.5px solid #829e87; border-radius: 3px; padding: 5px 3px; box-sizing: border-box; flex-shrink: 0; }
+.agent-waiting-paper i { display: block; height: 1.5px; margin-bottom: 3px; background: #829e87; transform-origin: left; animation: agent-waiting-read 1.8s ease-in-out infinite; }
+.agent-waiting-paper i:nth-child(2) { animation-delay: .2s; }
+.agent-waiting-paper i:nth-child(3) { width: 65%; animation-delay: .4s; }
+#agent-waiting[data-kind="review"] .agent-waiting-paper { display: block; }
+@keyframes agent-waiting-dot { 0%, 70%, 100% { transform: translateY(0); opacity: .4; } 35% { transform: translateY(-3px); opacity: 1; } }
+@keyframes agent-waiting-read { 0%, 100% { opacity: .35; } 45% { opacity: 1; } }
+#agent-waiting[data-motion="off"] i { animation: none; }
+@media (max-width: 1000px) {
+  #agent-waiting[data-inline="false"] { top: 88px; left: 50%; width: max-content; max-width: calc(100% - 28px); }
+  #game-screen.player-experience .agent-waiting-active #ui-objective { top: 147px; }
+  #game-screen.player-experience .agent-waiting-active #ui-stage-entry { top: 347px; }
+}
+@media (max-width: 760px) {
+  #agent-waiting[data-inline="false"] { top: 122px; }
+  #game-screen.player-experience .agent-waiting-active #ui-objective { top: 202px; }
+  #game-screen.player-experience .agent-waiting-active #ui-stage-entry { top: 412px; }
+}
+@media (prefers-reduced-motion: reduce) { #agent-waiting i { animation: none; } }

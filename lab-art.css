@@ -1,0 +1,79 @@
+/* Approved warm pixel-art layer. Scope to Lab Entry; other scenes retain art. */
+#game-screen .pixel-world.lab-art-ready { background: #ddbd8c; isolation: isolate; }
+.lab-art-ready > .room-shell,
+.lab-art-ready > .pixel-table,
+.lab-art-ready > .room-props { display: none; }
+#lab-room-surface { position: absolute; inset: 94px 0 0; z-index: 1; pointer-events: none;
+  background: url("./assets/lab-entry-v62/room/background.png") center / 100% 100% no-repeat;
+  image-rendering: pixelated; overflow: hidden; }
+#lab-art-scene { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+#game-screen.player-experience #lab-art-scene .sprite-layer { z-index: auto; pointer-events: none; }
+#lab-art-scene .lab-prop { position: absolute; transform: translate(-50%,-100%); pointer-events: none;
+  border: 0; background: none; box-shadow: none; }
+.lab-prop-art { position: absolute; inset: 0; display: block; overflow: hidden; }
+.lab-prop-art img { position: absolute; max-width: none; image-rendering: pixelated; }
+.lab-prop-shadow { position: absolute; left: 5%; right: 5%; bottom: -5px; height: 10px;
+  border-radius: 50%; background: rgba(65,48,27,.17); }
+.lab-prop-table .lab-prop-shadow { left: 1%; right: 1%; height: 16px; background: rgba(65,48,27,.13); }
+.lab-window-light { position: absolute; top: 18%; width: 14%; height: 27%; opacity: .24;
+  transform: skewX(-18deg); transform-origin: top right;
+  background: repeating-linear-gradient(90deg,transparent 0 7%,#fff4cb 7% 47%,transparent 47% 53%,#fff4cb 53% 93%,transparent 93% 100%);
+  mask-image: linear-gradient(#000 0 48%,transparent 48% 52%,#000 52% 90%,transparent);
+  -webkit-mask-image: linear-gradient(#000 0 48%,transparent 48% 52%,#000 52% 90%,transparent); }
+.lab-window-light-left { left: 36%; }
+.lab-window-light-right { left: 60%; }
+#game-screen.player-experience .lab-calibrated-sprite.pixel-sprite {
+  background: none; border: 0; padding: 0; box-shadow: none; filter: none;
+  transform: translate(-50%,-100%); animation: none !important; margin: 0;
+  pointer-events: auto; will-change: auto; overflow: visible; }
+.lab-sprite-art { position: absolute; display: block; background-repeat: no-repeat;
+  image-rendering: pixelated; pointer-events: none; }
+.lab-contact-shadow { position: absolute; left: 50%; bottom: -3px; width: 30px; height: 8px;
+  transform: translateX(-50%); border-radius: 50%; background: rgba(61,44,25,.22); pointer-events: none; }
+#game-screen.player-experience .lab-calibrated-sprite .sprite-name { top: -18px; z-index: 2; }
+/* Runtime geometry owns motion and names: no easing behind the hit map. */
+#game-screen.player-experience .npc-nameplate-layout #sprite-layer .pixel-sprite { transition: none; }
+#game-screen.player-experience .npc-nameplate-layout #sprite-layer .sprite-name {
+  left: var(--nameplate-x, 50%); top: var(--nameplate-y, -32px);
+  transform: none; pointer-events: auto;
+}
+#game-screen.player-experience .npc-nameplate-layout #sprite-layer .player .sprite-name { pointer-events: none; }
+#npc-nameplate-overflow { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; }
+#npc-nameplate-overflow[hidden] { display: none; }
+#npc-nameplate-overflow button { min-height: 36px; padding: 5px 12px; background: #fffef7; color: #253a3d;
+  border: 1px solid #b4ae98; border-radius: 4px; cursor: pointer; }
+#npc-nameplate-overflow button:focus-visible { outline: 2px solid #326d68; outline-offset: 2px; }
+.lab-calibrated-sprite:focus-visible { outline: 2px solid #326d68; outline-offset: 3px; border-radius: 5px; }
+@media (max-width: 760px) {
+  #lab-room-surface { top: 78px; }
+}
+.lab-contact-shadow{width:calc(30px * var(--lab-unit));height:calc(8px * var(--lab-unit))}
+.lab-personal-desk{position:absolute;pointer-events:none;transform:translate(-50%,-100%);width:calc(156px * var(--lab-unit));height:calc(64px * var(--lab-unit));filter:drop-shadow(0 3px 2px #49372428)}
+.lab-desk-top{position:absolute;inset:12% 0 30%;background:#bd8b59;border:calc(2px * var(--lab-unit)) solid #573f26;box-shadow:0 calc(5px * var(--lab-unit)) #82613b;overflow:hidden}
+.lab-desk-wood{position:absolute;inset:0;overflow:hidden}.lab-desk-wood img{position:absolute;max-width:none;width:1143.157%;height:1131.25%;left:-521.05%;top:-281.25%;image-rendering:pixelated}
+.lab-desk-leg{position:absolute;bottom:0;width:7%;height:43%;background:linear-gradient(90deg,#564029 0 24%,#b3814d 24% 72%,#6d4e2e 72%);border:calc(1px * var(--lab-unit)) solid #503921}.lab-desk-leg-left{left:4%}.lab-desk-leg-right{right:4%}
+.lab-desk-monitor{position:absolute;left:52%;top:2%;width:27%;height:44%;background:#596260;border:calc(2px * var(--lab-unit)) solid #3e4541;box-shadow:calc(2px * var(--lab-unit)) calc(2px * var(--lab-unit)) #3a433c}
+.lab-desk-monitor:after{content:"";position:absolute;bottom:-29%;left:35%;width:34%;height:20%;border-bottom:calc(2px * var(--lab-unit)) solid #434b44;background:#646d61}.lab-desk-monitor i{position:absolute;inset:8%;background:linear-gradient(#a6c4b0 0 13%,#34584d 13% 38%,#88a28e 38% 43%,#315248 43%)}
+.lab-desk-notes{position:absolute;left:13%;top:29%;width:22%;height:29%;background:repeating-linear-gradient(#eee5d0 0 18%,#b6b09d 18% 23%,#eee5d0 23% 36%);border:calc(1px * var(--lab-unit)) solid #b29c79;box-shadow:calc(1px * var(--lab-unit)) calc(2px * var(--lab-unit)) #70563855;transform:rotate(-4deg)}
+.lab-desk-pencil{position:absolute;left:39%;top:32%;width:2%;height:23%;background:#657665;transform:rotate(16deg)}
+.lab-desk-occupied.lab-station-screen .lab-desk-monitor i{animation:lab-screen-work 3s steps(2,end) infinite}.lab-desk-occupied.lab-station-notes .lab-desk-pencil{animation:lab-pencil-work 5s steps(2,end) infinite}.lab-desk-occupied.lab-station-read .lab-desk-notes{animation:lab-page-work 6s steps(2,end) infinite}
+@keyframes lab-screen-work{50%{filter:brightness(1.16)}}@keyframes lab-pencil-work{50%{transform:rotate(9deg)}}@keyframes lab-page-work{50%{transform:rotate(-1deg)}}
+@media(prefers-reduced-motion:reduce){.lab-personal-desk *{animation:none!important}}
+#game-screen.ui-motion .lab-personal-desk *{animation:none!important}
+/* Native pixel furniture, calibrated in the same room units as the sprites. */
+.lab-water-cooler{position:absolute;pointer-events:none;transform:translate(-50%,-100%);width:calc(42px * var(--lab-unit));height:calc(90px * var(--lab-unit));filter:drop-shadow(0 3px 2px #49372430)}
+.lab-water-bottle{position:absolute;left:16%;top:0;width:68%;height:38%;border:calc(2px * var(--lab-unit)) solid #486e77;border-radius:18% 18% 8% 8%;background:linear-gradient(90deg,#adc8c4 0 17%,#86b3b6 17% 74%,#689294 74%);box-shadow:inset 0 calc(-5px * var(--lab-unit)) #6a959a}
+.lab-water-bottle:after{content:"";position:absolute;left:9%;right:9%;top:22%;bottom:18%;border-top:calc(2px * var(--lab-unit)) solid #d0e2d4;border-bottom:calc(2px * var(--lab-unit)) solid #608b90}
+.lab-water-body{position:absolute;left:0;right:0;bottom:0;height:64%;background:linear-gradient(90deg,#c9cbbb 0 15%,#ebe6d5 15% 84%,#b2b7a8 84%);border:calc(2px * var(--lab-unit)) solid #53625c;box-shadow:0 calc(3px * var(--lab-unit)) #41534d}
+.lab-water-tap{position:absolute;left:23%;top:23%;width:14%;height:10%;background:#4f8586;box-shadow:calc(14px * var(--lab-unit)) 0 #ae6853}
+.lab-water-tray{position:absolute;left:12%;right:12%;top:51%;height:9%;background:#6d8178;border-bottom:calc(2px * var(--lab-unit)) solid #3f5149}
+.lab-water-stream{display:none;position:absolute;left:27%;top:32%;width:calc(2px * var(--lab-unit));height:18%;background:#94ced2}
+.lab-water-cooler[data-filling] .lab-water-stream{display:block;animation:lab-water-flow .7s steps(2,end) infinite}
+@keyframes lab-water-flow{50%{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.lab-water-cooler *{animation:none!important}}
+#game-screen.ui-motion .lab-water-cooler *{animation:none!important}
+/* v74: baked room art is retained; this is gentle time-of-day grading, not 3D weather. */
+#lab-time-light{position:absolute;inset:72px 0 0;z-index:6;pointer-events:none;background:linear-gradient(115deg,rgba(247,198,117,calc(var(--lab-light-warmth,0)*.10)),rgba(58,63,85,var(--lab-room-shade,.015)));transition:background .6s ease}
+.lab-window-light{opacity:var(--lab-window-opacity,.24);transform:skewX(var(--lab-window-skew,-18deg));transition:opacity .6s ease,transform .6s ease}
+@media(max-width:760px){#lab-time-light{top:68px}}
+@media(prefers-reduced-motion:reduce){#lab-time-light,.lab-window-light{transition:none}}

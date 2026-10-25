@@ -1,0 +1,4 @@
+# Server-only WebSocket transport for Qwen Flash and optional GPT-Live.
+websocket-client==1.9.2
+# Local paired accounts/questionnaires use Python's built-in SQLite module.
+# This public release does not connect to cloud research storage.

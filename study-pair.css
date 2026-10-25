@@ -1,0 +1,77 @@
+.study-pair-notice {padding: 1rem; margin: 0 0 1.25rem; border: 1px solid #c4d7d0; border-radius: .7rem; background: #f2f7f4; color: #193d38;}
+.study-pair-notice h3 {margin-top: 0;}
+.study-pair-notice p, .study-pair-summary-controls p {line-height: 1.6; overflow-wrap: anywhere;}
+.study-pair-notice button + button, .study-pair-summary-controls button + button {margin-top: .7rem;}
+.study-pair-summary-controls {grid-column: 1 / -1;}
+.study-pair-complete, .study-questionnaire-panel {max-width: 780px; margin: 1.5rem auto;}
+.study-questionnaire-panel {border: 1px dashed #a9bcb7; background: #f7f9f7;}
+.study-pair-save-banner {position: fixed; z-index: 1500; top: 1rem; left: 50%; transform: translateX(-50%); width: min(94vw, 760px); padding: 1rem; background: #fff7e5; color: #473412; border: 1px solid #cbae70; border-radius: .6rem; box-shadow: 0 5px 24px #0002; line-height: 1.5;}
+.study-pair-save-banner button {margin-left: .8rem;}
+.paired-study #restart-btn, .paired-study #summary-menu-btn, .paired-study #back-main-menu-btn,
+.paired-study #admin-unlock-details, .paired-study #summary-admin-unlock {display: none !important;}
+.paired-study #participant-id:disabled {opacity: 1; color: inherit; background: #eef2ef;}
+@media (max-width: 640px) {.study-pair-save-banner button {display: block; margin: .7rem 0 0;} .study-pair-complete, .study-questionnaire-panel {margin: 1rem 0;}}
+
+.study-pair-keepsakes {max-width: 1440px; margin: 1.5rem auto; min-width: 0;}
+.study-pair-keepsake-heading p {line-height: 1.65;}
+.study-keepsake-tabs {display: flex; gap: .75rem; flex-wrap: wrap;}
+.study-keepsake-tabs button[aria-pressed="true"] {background: #294d47; color: #fffdf7; border-color: #294d47;}
+.study-pair-keepsakes .lab-ending-layout {display: grid; grid-template-columns: minmax(280px, .85fr) minmax(0, 1.4fr); gap: 1.25rem;}
+@media (max-width: 760px) {.study-pair-keepsakes .lab-ending-layout {grid-template-columns: minmax(0, 1fr);} .study-pair-keepsakes {margin: 1rem 0;} .study-keepsake-tabs button {flex: 1;}}
+
+/* Save stays outside the story fold and the details disclosure. */
+#cloud-save-controls {display:grid;grid-template-columns:minmax(76px,.85fr) minmax(0,1.4fr);gap:6px;flex:none;min-width:0;width:100%;pointer-events:none;}
+#cloud-save-controls[hidden] {display:none;}
+#cloud-save-now {min-width:0;min-height:44px;padding:8px 6px;border:1px solid #315f4e;border-radius:8px;background:#315f4e;color:#fffdf7;font:inherit;font-size:12px;line-height:1.4;cursor:pointer;pointer-events:auto;}
+#cloud-save-now[aria-disabled='true'] {opacity:.6;cursor:default;}
+#cloud-save-now:focus-visible {outline:3px solid #277e85;outline-offset:2px;}
+#cloud-save-controls:has(>#study-pair-game-card[open]) {display:flex;flex-direction:column;}
+#cloud-save-controls>#study-pair-game-card {flex:none;min-width:0;width:100%;box-sizing:border-box;margin:0;padding:0;border:1px solid #c4d7d0;border-radius:8px;background:#f7faf4;color:#294d47;pointer-events:auto;overflow-wrap:anywhere;}
+#study-pair-game-card>summary {min-height:44px;box-sizing:border-box;padding:10px 12px;font-size:11px;line-height:1.7;cursor:pointer;list-style-position:inside;}
+#study-pair-game-card>summary:focus-visible {outline:3px solid #277e85;outline-offset:-3px;border-radius:7px;}
+#study-pair-game-card .cloud-save-icon {margin-right:6px;}
+#cloud-save-short-status {display:none;}
+#study-pair-game-card[open]>summary {border-bottom:1px solid #dbe5d5;}
+#study-pair-game-card[data-save-status='error'],#study-pair-game-card[data-save-status='offline'],#study-pair-game-card[data-save-status='conflict'] {border-color:#b7a66d;background:#fcf8e9;}
+.cloud-save-card-body {padding:10px 12px;}
+#study-pair-game-card .cloud-save-card-body p {margin:0 0 10px;font-size:11px;line-height:1.7;}
+#cloud-save-game-label {font-weight:600;}
+#cloud-save-confirmed-label,#cloud-save-confirmed-time {display:block;}
+#cloud-save-message {color:#6b5729;}
+.cloud-save-actions {display:flex;flex-direction:column;gap:7px;margin-bottom:10px;}
+#study-pair-game-card .cloud-save-actions button {width:100%;min-height:44px;padding:8px 10px;border:1px solid #afc4ad;border-radius:6px;background:#edf3e7;color:#315f4e;font:inherit;font-size:12px;line-height:1.6;white-space:normal;}
+#study-pair-game-card .cloud-save-actions button:disabled {opacity:.55;cursor:default;}
+#cloud-save-auto-note {color:#61745c;}
+.lab-entry-shell .cloud-save-restore-dialog {width:min(510px,calc(100% - 30px));max-height:85svh;overflow:auto;overscroll-behavior:contain;}
+.cloud-save-restore-dialog .project-info-content {padding:24px;}
+.lab-entry-shell .cloud-save-restore-dialog .project-info-content>h2 {font-size:23px;line-height:1.5;}
+.cloud-save-restore-dialog p {font-size:14px;line-height:1.8;overflow-wrap:anywhere;}
+#cloud-save-restore-confirmed {font-size:12px;color:#61745c;}
+.cloud-save-dialog-actions {display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;}
+.cloud-save-dialog-actions button {min-height:44px;flex:1 1 160px;white-space:normal;}
+@media(max-width:760px) {
+ /* Share the existing action row; leave the centre NPC name unobstructed. */
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;}
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions>#ui-objective {grid-column:1/-1;}
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions>#ui-mainline-toggle {grid-column:1;grid-row:2;min-width:0;padding:8px 7px;font-size:10px;line-height:1.4;}
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions>#cloud-save-controls {grid-column:2;grid-row:2;}
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions>#ui-mainline-actions {grid-column:1/-1;grid-row:3;}
+ #cloud-save-controls:not(:has(>#study-pair-game-card[open])) {grid-template-columns:minmax(0,1fr) 44px;gap:0;}
+ #cloud-save-now {font-size:11px;white-space:nowrap;}
+ #cloud-save-controls:not(:has(>#study-pair-game-card[open]))>#cloud-save-now {border-radius:8px 0 0 8px;}
+ #cloud-save-controls>#study-pair-game-card:not([open]) {border-radius:0 8px 8px 0;}
+ #study-pair-game-card:not([open])>#cloud-save-summary {position:relative;display:flex;align-items:center;justify-content:center;min-height:42px;padding:6px 2px;font-size:10px;line-height:1.15;text-align:center;list-style:none;}
+ #study-pair-game-card:not([open])>#cloud-save-summary::marker {content:'';}
+ #study-pair-game-card:not([open])>#cloud-save-summary::-webkit-details-marker {display:none;}
+ #study-pair-game-card:not([open])>#cloud-save-summary::after {content:'▾';position:absolute;right:1px;bottom:1px;font-size:8px;line-height:1;}
+ #study-pair-game-card:not([open]) .cloud-save-icon {display:none;}
+ #study-pair-game-card:not([open]) #cloud-save-short-status {display:block;max-width:100%;overflow-wrap:anywhere;}
+ #study-pair-game-card:not([open]) #cloud-save-summary-text {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions>#cloud-save-controls:has(>#study-pair-game-card[open]) {grid-column:1/-1;grid-row:3;}
+ #ui-mainline-hud.cloud-save-present.has-mainline-actions:has(#study-pair-game-card[open])>#ui-mainline-actions {grid-row:4;}
+ #ui-mainline-hud.cloud-save-present:not(.has-mainline-actions) {pointer-events:none;}
+ #ui-mainline-hud.cloud-save-present:not(.has-mainline-actions)>#cloud-save-controls:not(:has(>#study-pair-game-card[open])) {width:calc(50% - 4px);min-width:105px;align-self:flex-end;}
+ .cloud-save-restore-dialog .project-info-content {padding:20px;}
+ .cloud-save-dialog-actions {flex-direction:column;}
+ .cloud-save-dialog-actions button {flex:auto;width:100%;}
+}

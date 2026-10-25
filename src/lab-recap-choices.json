@@ -1,0 +1,86 @@
+[
+  {
+    "stageId": "stage_1_entry",
+    "choices": [
+      {
+        "id": "entry_context_needs",
+        "label": "Take a first bounded task after clarifying what the lab most needs."
+      },
+      {
+        "id": "entry_overpromise",
+        "label": "Promise you can take any urgent work to prove you deserve a place."
+      },
+      {
+        "id": "entry_perfunctory",
+        "label": "Keep it vague and say you will just observe until people assign you something."
+      },
+      {
+        "id": "entry_fair_start",
+        "label": "Name the awkward situation and ask for a clear, fair starting point."
+      }
+    ]
+  },
+  {
+    "stageId": "stage_2_first_failure",
+    "choices": [
+      {
+        "id": "task_risk_verification",
+        "label": "Explain the report’s numbers, evidence limits and concrete body changes."
+      },
+      {
+        "id": "task_avoid_critique",
+        "label": "Say the report looks fine and avoid discussing its evidence risks."
+      },
+      {
+        "id": "task_blame_kai",
+        "label": "Point out that Kai's earlier assumptions caused the problem."
+      },
+      {
+        "id": "task_dependency",
+        "label": "Ask Kai to tell you exactly what answer the lab expects."
+      }
+    ]
+  },
+  {
+    "stageId": "stage_3_revision_conflict",
+    "choices": [
+      {
+        "id": "revision_legacy_current",
+        "label": "Separate starting-draft defects from actual edits and retain the report versions."
+      },
+      {
+        "id": "revision_self_blame",
+        "label": "Take all blame so the group can move on quickly."
+      },
+      {
+        "id": "revision_public_challenge",
+        "label": "Challenge Prof. Zhao publicly for making the transfer unfair."
+      },
+      {
+        "id": "revision_visible_owners",
+        "label": "Ask for a visible owner and next check for each revision."
+      }
+    ]
+  },
+  {
+    "stageId": "stage_4_credit",
+    "choices": [
+      {
+        "id": "credit_evidence_acknowledge",
+        "label": "State your contribution with evidence while acknowledging others' work."
+      },
+      {
+        "id": "credit_defer",
+        "label": "Let senior members decide credit so you do not create tension."
+      },
+      {
+        "id": "credit_overclaim",
+        "label": "Claim the central credit because you fixed the crisis."
+      },
+      {
+        "id": "credit_transparent_split",
+        "label": "Ask for a transparent credit split and a short feedback round."
+      }
+    ]
+  }
+]
